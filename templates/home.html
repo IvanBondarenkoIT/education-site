@@ -1,0 +1,214 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Дом Кофе - Образовательный портал{% endblock %}
+
+{% block meta_description %}Образовательный портал компании Дом Кофе. Программы обучения, должностные инструкции, информация о кофе и бизнес-ценности.{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero hero--home">
+    <div class="hero__background">
+        <div class="hero__overlay"></div>
+    </div>
+    <div class="container">
+        <div class="row align-items-center min-vh-75">
+            <div class="col-lg-8 col-xl-7">
+                <div class="hero__content">
+                    <h1 class="hero__title display-3 fw-bold text-white mb-4">
+                        Добро пожаловать в команду <span class="text-warning">Дом Кофе</span>
+                    </h1>
+                    <p class="hero__subtitle lead text-white-75 mb-5">
+                        Образовательный портал для профессионального развития сотрудников кофейной компании
+                    </p>
+                    <div class="hero__actions">
+                        <a href="{% url 'core:training_program' %}" class="btn btn-warning btn-lg me-3 mb-2">
+                            <i class="fas fa-graduation-cap me-2"></i>
+                            Начать обучение
+                        </a>
+                        <a href="{% url 'core:business_values' %}" class="btn btn-outline-light btn-lg mb-2">
+                            <i class="fas fa-chart-line me-2"></i>
+                            Наши ценности
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-xl-5">
+                <div class="hero__image text-center">
+                    <div class="hero__coffee-cup">
+                        <i class="fas fa-coffee fa-8x text-warning opacity-75"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="features section section--light">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section__header text-center mb-5">
+                    <h2 class="section__title display-5 fw-bold mb-3">
+                        Что вы найдете на нашем портале
+                    </h2>
+                    <p class="section__subtitle lead text-muted">
+                        Все необходимые материалы для успешной работы в команде Дом Кофе
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row g-4">
+            <!-- Training Programs -->
+            <div class="col-md-6 col-lg-3">
+                <div class="feature-card feature-card--training">
+                    <div class="feature-card__icon">
+                        <i class="fas fa-graduation-cap fa-3x text-primary"></i>
+                    </div>
+                    <div class="feature-card__content">
+                        <h3 class="feature-card__title h5 fw-bold mb-3">
+                            Программы обучения
+                        </h3>
+                        <p class="feature-card__description text-muted mb-4">
+                            Структурированные программы для новых сотрудников с пошаговым обучением
+                        </p>
+                        <a href="{% url 'core:training_program' %}" class="feature-card__link btn btn-outline-primary">
+                            Подробнее
+                            <i class="fas fa-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Job Instructions -->
+            <div class="col-md-6 col-lg-3">
+                <div class="feature-card feature-card--instructions">
+                    <div class="feature-card__icon">
+                        <i class="fas fa-file-alt fa-3x text-success"></i>
+                    </div>
+                    <div class="feature-card__content">
+                        <h3 class="feature-card__title h5 fw-bold mb-3">
+                            Должностные инструкции
+                        </h3>
+                        <p class="feature-card__description text-muted mb-4">
+                            Подробные инструкции для всех должностей и специализаций
+                        </p>
+                        <a href="{% url 'core:job_instructions' %}" class="feature-card__link btn btn-outline-success">
+                            Подробнее
+                            <i class="fas fa-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Coffee Information -->
+            <div class="col-md-6 col-lg-3">
+                <div class="feature-card feature-card--coffee">
+                    <div class="feature-card__icon">
+                        <i class="fas fa-mug-hot fa-3x text-warning"></i>
+                    </div>
+                    <div class="feature-card__content">
+                        <h3 class="feature-card__title h5 fw-bold mb-3">
+                            О кофе
+                        </h3>
+                        <p class="feature-card__description text-muted mb-4">
+                            Экспертные знания о кофейных зернах, способах заваривания и качестве
+                        </p>
+                        <a href="{% url 'core:coffee_info' %}" class="feature-card__link btn btn-outline-warning">
+                            Подробнее
+                            <i class="fas fa-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Business Values -->
+            <div class="col-md-6 col-lg-3">
+                <div class="feature-card feature-card--values">
+                    <div class="feature-card__icon">
+                        <i class="fas fa-chart-line fa-3x text-info"></i>
+                    </div>
+                    <div class="feature-card__content">
+                        <h3 class="feature-card__title h5 fw-bold mb-3">
+                            Бизнес-ценности
+                        </h3>
+                        <p class="feature-card__description text-muted mb-4">
+                            Принципы и ценности, которые определяют нашу корпоративную культуру
+                        </p>
+                        <a href="{% url 'core:business_values' %}" class="feature-card__link btn btn-outline-info">
+                            Подробнее
+                            <i class="fas fa-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Quick Stats Section -->
+<section class="stats section">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-6 col-md-3">
+                <div class="stat-card stat-card--primary text-center">
+                    <div class="stat-card__number display-6 fw-bold text-primary mb-2">33</div>
+                    <div class="stat-card__label text-muted">Бизнес-ценности</div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="stat-card stat-card--success text-center">
+                    <div class="stat-card__number display-6 fw-bold text-success mb-2">12</div>
+                    <div class="stat-card__label text-muted">Должностных инструкций</div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="stat-card stat-card--warning text-center">
+                    <div class="stat-card__number display-6 fw-bold text-warning mb-2">8</div>
+                    <div class="stat-card__label text-muted">Тем о кофе</div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="stat-card stat-card--info text-center">
+                    <div class="stat-card__number display-6 fw-bold text-info mb-2">4</div>
+                    <div class="stat-card__label text-muted">Языка поддержки</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action Section -->
+<section class="cta section section--dark">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <div class="cta__content">
+                    <h2 class="cta__title display-5 fw-bold text-white mb-4">
+                        Готовы начать обучение?
+                    </h2>
+                    <p class="cta__description lead text-white-75 mb-5">
+                        Присоединяйтесь к команде профессионалов и развивайтесь вместе с нами
+                    </p>
+                    <div class="cta__actions">
+                        <a href="{% url 'core:training_program' %}" class="btn btn-warning btn-lg me-3 mb-2">
+                            <i class="fas fa-play me-2"></i>
+                            Начать обучение
+                        </a>
+                        <a href="{% url 'core:business_values' %}" class="btn btn-outline-light btn-lg mb-2">
+                            <i class="fas fa-info-circle me-2"></i>
+                            Узнать больше
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/layouts/home.css' %}">
+{% endblock %}

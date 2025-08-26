@@ -1,0 +1,46 @@
+<!-- Language Switcher -->
+<div class="language-switcher">
+    <div class="dropdown">
+        <button class="btn btn-outline-light dropdown-toggle language-switcher__button" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+            <span class="language-switcher__current">
+                {% if LANGUAGE_CODE == 'ru' %}
+                    🇷🇺 Русский
+                {% elif LANGUAGE_CODE == 'uk' %}
+                    🇺🇦 Українська
+                {% elif LANGUAGE_CODE == 'en' %}
+                    🇬🇧 English
+                {% elif LANGUAGE_CODE == 'ka' %}
+                    🇬🇪 ქართული
+                {% else %}
+                    🇷🇺 Русский
+                {% endif %}
+            </span>
+        </button>
+        <ul class="dropdown-menu language-switcher__menu" aria-labelledby="languageDropdown">
+            <li>
+                <a class="dropdown-item language-switcher__item" href="?lang=ru">
+                    <span class="language-switcher__flag">🇷🇺</span>
+                    <span class="language-switcher__name">Русский</span>
+                </a>
+            </li>
+            <li>
+                <a class="dropdown-item language-switcher__item" href="?lang=uk">
+                    <span class="language-switcher__flag">🇺🇦</span>
+                    <span class="language-switcher__name">Українська</span>
+                </a>
+            </li>
+            <li>
+                <a class="dropdown-item language-switcher__item" href="?lang=en">
+                    <span class="language-switcher__flag">🇬🇧</span>
+                    <span class="language-switcher__name">English</span>
+                </a>
+            </li>
+            <li>
+                <a class="dropdown-item language-switcher__item" href="?lang=ka">
+                    <span class="language-switcher__flag">🇬🇪</span>
+                    <span class="language-switcher__name">ქართული</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
