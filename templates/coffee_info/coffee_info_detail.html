@@ -1,0 +1,144 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}{{ coffee_info.title }} - {{ site_name }}{% endblock %}
+
+{% block meta_description %}{{ coffee_info.title }}. Информация о кофе и зерне компании Дом Кофе.{% endblock %}
+
+{% block breadcrumbs %}
+<nav aria-label="breadcrumb" class="breadcrumb-nav">
+    <div class="container">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="{% url 'core:home' %}">
+                    <i class="fas fa-home"></i>
+                    Главная
+                </a>
+            </li>
+            <li class="breadcrumb-item">
+                <a href="{% url 'core:coffee_info' %}">
+                    <i class="fas fa-mug-hot"></i>
+                    О кофе
+                </a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+                {{ coffee_info.title }}
+            </li>
+        </ol>
+    </div>
+</nav>
+{% endblock %}
+
+{% block content %}
+<!-- Coffee Info Detail Section -->
+<section class="coffee-info-detail section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="coffee-info-detail__content">
+                    <!-- Coffee Info Header -->
+                    <div class="coffee-info-detail__header mb-4">
+                        <div class="coffee-info-detail__category-badge mb-3">
+                            <span class="badge bg-warning text-dark fs-6">
+                                <i class="fas fa-coffee me-2"></i>
+                                {{ coffee_info.get_category_display }}
+                            </span>
+                        </div>
+                        <h1 class="coffee-info-detail__title display-5 fw-bold mb-3">
+                            {{ coffee_info.title }}
+                        </h1>
+                        <div class="coffee-info-detail__meta text-muted">
+                            <small>
+                                <i class="fas fa-clock me-1"></i>
+                                Создано: {{ coffee_info.created_at|date:"d.m.Y" }}
+                                {% if coffee_info.updated_at != coffee_info.created_at %}
+                                <span class="ms-3">
+                                    <i class="fas fa-edit me-1"></i>
+                                    Обновлено: {{ coffee_info.updated_at|date:"d.m.Y" }}
+                                </span>
+                                {% endif %}
+                            </small>
+                        </div>
+                    </div>
+
+                    <!-- Coffee Info Content -->
+                    <div class="coffee-info-detail__body">
+                        {% if coffee_info.image %}
+                        <div class="coffee-info-detail__image mb-4">
+                            <img src="{{ coffee_info.image.url }}" alt="{{ coffee_info.title }}" class="img-fluid rounded">
+                        </div>
+                        {% endif %}
+                        <div class="coffee-info-detail__content-text">
+                            {{ coffee_info.content|safe }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="coffee-info-detail__sidebar">
+                    <!-- Coffee Info Card -->
+                    <div class="coffee-info-card mb-4">
+                        <div class="coffee-info-card__header">
+                            <h3 class="coffee-info-card__title h5 fw-bold mb-3">
+                                <i class="fas fa-info-circle text-warning me-2"></i>
+                                Информация о теме
+                            </h3>
+                        </div>
+                        <div class="coffee-info-card__body">
+                            <ul class="coffee-info-card__list list-unstyled">
+                                <li class="coffee-info-card__item mb-2">
+                                    <strong>Категория:</strong>
+                                    <span class="badge bg-warning text-dark ms-2">{{ coffee_info.get_category_display }}</span>
+                                </li>
+                                <li class="coffee-info-card__item mb-2">
+                                    <strong>Порядок:</strong>
+                                    <span class="badge bg-secondary ms-2">{{ coffee_info.order }}</span>
+                                </li>
+                                <li class="coffee-info-card__item">
+                                    <strong>Статус:</strong>
+                                    {% if coffee_info.is_active %}
+                                    <span class="badge bg-success ms-2">Активна</span>
+                                    {% else %}
+                                    <span class="badge bg-danger ms-2">Неактивна</span>
+                                    {% endif %}
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Navigation Card -->
+                    <div class="navigation-card">
+                        <div class="navigation-card__header">
+                            <h3 class="navigation-card__title h5 fw-bold mb-3">
+                                <i class="fas fa-compass text-warning me-2"></i>
+                                Навигация
+                            </h3>
+                        </div>
+                        <div class="navigation-card__body">
+                            <div class="navigation-card__actions">
+                                <a href="{% url 'core:coffee_info' %}" class="btn btn-outline-warning btn-sm w-100 mb-2">
+                                    <i class="fas fa-list me-2"></i>
+                                    Все темы
+                                </a>
+                                <a href="{% url 'core:training_program' %}" class="btn btn-outline-primary btn-sm w-100 mb-2">
+                                    <i class="fas fa-graduation-cap me-2"></i>
+                                    Программы обучения
+                                </a>
+                                <a href="{% url 'core:job_instructions' %}" class="btn btn-outline-success btn-sm w-100">
+                                    <i class="fas fa-file-alt me-2"></i>
+                                    Должностные инструкции
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/layouts/coffee-info.css' %}">
+{% endblock %}

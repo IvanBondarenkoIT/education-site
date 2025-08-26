@@ -1,0 +1,108 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Бизнес-ценности компании - {{ site_name }}{% endblock %}
+
+{% block meta_description %}Бизнес-ценности компании Дом Кофе. Принципы и ценности, которые определяют нашу корпоративную культуру.{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero hero--business-values">
+    <div class="hero__background">
+        <div class="hero__overlay"></div>
+    </div>
+    <div class="container">
+        <div class="row align-items-center min-vh-50">
+            <div class="col-lg-8">
+                <div class="hero__content">
+                    <h1 class="hero__title display-4 fw-bold text-white mb-4">
+                        Бизнес-ценности компании
+                    </h1>
+                    <p class="hero__subtitle lead text-white-75 mb-4">
+                        Принципы и ценности, которые определяют нашу корпоративную культуру
+                    </p>
+                    <div class="hero__stats">
+                        <span class="badge bg-warning text-dark fs-6 me-3">
+                            <i class="fas fa-chart-line me-2"></i>
+                            {{ total_count }} ценностей
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Business Values Section -->
+<section class="business-values section">
+    <div class="container">
+        {% for category, values in categories.items %}
+        <div class="business-values__category mb-5">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="business-values__category-title h3 fw-bold mb-4">
+                        <i class="fas fa-star text-warning me-2"></i>
+                        {{ values.0.get_category_display }}
+                    </h2>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                {% for value in values %}
+                <div class="col-md-6 col-lg-4">
+                    <div class="business-value-card">
+                        <div class="business-value-card__header">
+                            <div class="business-value-card__number">{{ forloop.counter }}</div>
+                            <div class="business-value-card__category">
+                                <span class="badge bg-primary">{{ value.get_category_display }}</span>
+                            </div>
+                        </div>
+                        <div class="business-value-card__content">
+                            <h3 class="business-value-card__situation h6 fw-bold mb-3">
+                                {{ value.situation }}
+                            </h3>
+                            <p class="business-value-card__value text-muted">
+                                {{ value.business_value }}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<!-- Call to Action Section -->
+<section class="cta section section--light">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <div class="cta__content">
+                    <h2 class="cta__title h3 fw-bold mb-4">
+                        Готовы применить эти ценности в работе?
+                    </h2>
+                    <p class="cta__description text-muted mb-4">
+                        Изучите программы обучения и должностные инструкции для успешной работы в команде
+                    </p>
+                    <div class="cta__actions">
+                        <a href="{% url 'core:training_program' %}" class="btn btn-primary btn-lg me-3">
+                            <i class="fas fa-graduation-cap me-2"></i>
+                            Программы обучения
+                        </a>
+                        <a href="{% url 'core:job_instructions' %}" class="btn btn-outline-primary btn-lg">
+                            <i class="fas fa-file-alt me-2"></i>
+                            Должностные инструкции
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/layouts/business-values.css' %}">
+{% endblock %}

@@ -1,0 +1,143 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}{{ program.title }} - {{ site_name }}{% endblock %}
+
+{% block meta_description %}{{ program.title }}. Программа обучения новых сотрудников компании Дом Кофе.{% endblock %}
+
+{% block breadcrumbs %}
+<nav aria-label="breadcrumb" class="breadcrumb-nav">
+    <div class="container">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="{% url 'core:home' %}">
+                    <i class="fas fa-home"></i>
+                    Главная
+                </a>
+            </li>
+            <li class="breadcrumb-item">
+                <a href="{% url 'core:training_program' %}">
+                    <i class="fas fa-graduation-cap"></i>
+                    Программы обучения
+                </a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+                {{ program.title }}
+            </li>
+        </ol>
+    </div>
+</nav>
+{% endblock %}
+
+{% block content %}
+<!-- Program Detail Section -->
+<section class="program-detail section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="program-detail__content">
+                    <!-- Program Header -->
+                    <div class="program-detail__header mb-4">
+                        <div class="program-detail__period-badge mb-3">
+                            <span class="badge bg-primary fs-6">
+                                <i class="fas fa-calendar me-2"></i>
+                                {{ program.get_period_type_display }} {{ program.period_number }}
+                            </span>
+                        </div>
+                        <h1 class="program-detail__title display-5 fw-bold mb-3">
+                            {{ program.title }}
+                        </h1>
+                        <div class="program-detail__meta text-muted">
+                            <small>
+                                <i class="fas fa-clock me-1"></i>
+                                Создано: {{ program.created_at|date:"d.m.Y" }}
+                                {% if program.updated_at != program.created_at %}
+                                <span class="ms-3">
+                                    <i class="fas fa-edit me-1"></i>
+                                    Обновлено: {{ program.updated_at|date:"d.m.Y" }}
+                                </span>
+                                {% endif %}
+                            </small>
+                        </div>
+                    </div>
+
+                    <!-- Program Content -->
+                    <div class="program-detail__body">
+                        <div class="program-detail__content-text">
+                            {{ program.content|safe }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="program-detail__sidebar">
+                    <!-- Program Info Card -->
+                    <div class="program-info-card mb-4">
+                        <div class="program-info-card__header">
+                            <h3 class="program-info-card__title h5 fw-bold mb-3">
+                                <i class="fas fa-info-circle text-primary me-2"></i>
+                                Информация о программе
+                            </h3>
+                        </div>
+                        <div class="program-info-card__body">
+                            <ul class="program-info-card__list list-unstyled">
+                                <li class="program-info-card__item mb-2">
+                                    <strong>Тип периода:</strong>
+                                    <span class="badge bg-primary ms-2">{{ program.get_period_type_display }}</span>
+                                </li>
+                                <li class="program-info-card__item mb-2">
+                                    <strong>Номер периода:</strong>
+                                    <span class="badge bg-secondary ms-2">{{ program.period_number }}</span>
+                                </li>
+                                <li class="program-info-card__item mb-2">
+                                    <strong>Порядок:</strong>
+                                    <span class="badge bg-info ms-2">{{ program.order }}</span>
+                                </li>
+                                <li class="program-info-card__item">
+                                    <strong>Статус:</strong>
+                                    {% if program.is_active %}
+                                    <span class="badge bg-success ms-2">Активна</span>
+                                    {% else %}
+                                    <span class="badge bg-danger ms-2">Неактивна</span>
+                                    {% endif %}
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Navigation Card -->
+                    <div class="navigation-card">
+                        <div class="navigation-card__header">
+                            <h3 class="navigation-card__title h5 fw-bold mb-3">
+                                <i class="fas fa-compass text-success me-2"></i>
+                                Навигация
+                            </h3>
+                        </div>
+                        <div class="navigation-card__body">
+                            <div class="navigation-card__actions">
+                                <a href="{% url 'core:training_program' %}" class="btn btn-outline-primary btn-sm w-100 mb-2">
+                                    <i class="fas fa-list me-2"></i>
+                                    Все программы
+                                </a>
+                                <a href="{% url 'core:job_instructions' %}" class="btn btn-outline-success btn-sm w-100 mb-2">
+                                    <i class="fas fa-file-alt me-2"></i>
+                                    Должностные инструкции
+                                </a>
+                                <a href="{% url 'core:coffee_info' %}" class="btn btn-outline-warning btn-sm w-100">
+                                    <i class="fas fa-mug-hot me-2"></i>
+                                    О кофе
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/layouts/training.css' %}">
+{% endblock %}

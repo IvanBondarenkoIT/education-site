@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="{{ LANGUAGE_CODE|default:'ru' }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- SEO Meta Tags -->
+    <title>{% block title %}Дом Кофе - Образовательный портал{% endblock %}</title>
+    <meta name="description" content="{% block meta_description %}Образовательный портал компании Дом Кофе. Программы обучения, должностные инструкции, информация о кофе и бизнес-ценности.{% endblock %}">
+    <meta name="keywords" content="{% block meta_keywords %}кофе, обучение, бариста, менеджер, должностные инструкции, бизнес-ценности{% endblock %}">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="{% block og_title %}{{ block.super }}{% endblock %}">
+    <meta property="og:description" content="{% block og_description %}{{ block.meta_description }}{% endblock %}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ request.build_absolute_uri }}">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    
+    <!-- Page specific CSS -->
+    {% block extra_css %}{% endblock %}
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}">
+</head>
+<body class="coffee-site">
+    <!-- Header -->
+    <header class="site-header">
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand" href="{% url 'core:home' %}">
+                    <img src="{% static 'images/logo.png' %}" alt="Дом Кофе" class="navbar-logo" height="40">
+                    <span class="brand-text ms-2">Дом Кофе</span>
+                </a>
+                
+                <!-- Mobile Toggle -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <!-- Navigation Menu -->
+                <div class="collapse navbar-collapse" id="navbarMain">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link {% if request.resolver_match.url_name == 'home' %}active{% endif %}" href="{% url 'core:home' %}">
+                                <i class="fas fa-home me-1"></i>
+                                Главная
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {% if 'training' in request.resolver_match.url_name %}active{% endif %}" href="{% url 'core:training_program' %}">
+                                <i class="fas fa-graduation-cap me-1"></i>
+                                Обучение
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {% if 'instructions' in request.resolver_match.url_name %}active{% endif %}" href="{% url 'core:job_instructions' %}">
+                                <i class="fas fa-file-alt me-1"></i>
+                                Инструкции
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {% if 'coffee' in request.resolver_match.url_name %}active{% endif %}" href="{% url 'core:coffee_info' %}">
+                                <i class="fas fa-mug-hot me-1"></i>
+                                О кофе
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {% if 'business' in request.resolver_match.url_name %}active{% endif %}" href="{% url 'core:business_values' %}">
+                                <i class="fas fa-chart-line me-1"></i>
+                                Ценности
+                            </a>
+                        </li>
+                    </ul>
+                    
+                    <!-- Language Switcher -->
+                    {% include 'includes/language_switcher.html' %}
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="site-main">
+        <!-- Breadcrumbs -->
+        {% block breadcrumbs %}{% endblock %}
+        
+        <!-- Page Content -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    {% block content %}{% endblock %}
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer bg-dark text-light mt-5">
+        <div class="container">
+            <div class="row py-4">
+                <div class="col-md-6">
+                    <h5 class="footer__title">
+                        <i class="fas fa-coffee me-2"></i>
+                        Дом Кофе
+                    </h5>
+                    <p class="footer__description">
+                        Образовательный портал для сотрудников кофейной компании
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="footer__section-title">Разделы</h6>
+                    <ul class="footer__nav list-unstyled">
+                        <li><a href="{% url 'core:home' %}" class="footer__link">Главная</a></li>
+                        <li><a href="{% url 'core:training_program' %}" class="footer__link">Обучение</a></li>
+                        <li><a href="{% url 'core:job_instructions' %}" class="footer__link">Инструкции</a></li>
+                        <li><a href="{% url 'core:coffee_info' %}" class="footer__link">О кофе</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="footer__section-title">Языки</h6>
+                    <ul class="footer__languages list-unstyled">
+                        <li><a href="?lang=ru" class="footer__link">🇷🇺 Русский</a></li>
+                        <li><a href="?lang=uk" class="footer__link">🇺🇦 Українська</a></li>
+                        <li><a href="?lang=en" class="footer__link">🇬🇧 English</a></li>
+                        <li><a href="?lang=ka" class="footer__link">🇬🇪 ქართული</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="footer__divider">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="footer__copyright mb-0">
+                        © {% now "Y" %} Дом Кофе. Все права защищены.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="{% static 'js/main.js' %}"></script>
+    
+    <!-- Page specific JS -->
+    {% block extra_js %}{% endblock %}
+</body>
+</html>
