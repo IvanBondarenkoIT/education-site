@@ -58,3 +58,4 @@ class Command(BaseCommand):
         self.stdout.write('   python manage.py import_training_program')
         self.stdout.write('   python manage.py import_job_instructions')
         self.stdout.write('   python manage.py import_coffee_info')
+
