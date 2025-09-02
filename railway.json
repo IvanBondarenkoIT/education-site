@@ -4,7 +4,7 @@
     "builder": "NIXPACKS"
   },
   "deploy": {
-    "startCommand": "python manage.py migrate && python manage.py create_initial_data && python manage.py import_business_values && python manage.py import_training_program && python manage.py import_job_instructions && python manage.py import_coffee_info && python manage.py collectstatic --noinput && gunicorn education_site.wsgi --log-file -",
+    "startCommand": "python manage.py migrate && python manage.py create_initial_data && python manage.py loaddata all_data && python manage.py collectstatic --noinput && gunicorn education_site.wsgi --log-file -",
     "restartPolicyType": "ON_FAILURE",
     "restartPolicyMaxRetries": 10
   }
