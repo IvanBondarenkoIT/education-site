@@ -1,6 +1,7 @@
 from django.core.management.base import BaseCommand
 from django.core.management import call_command
 from django.conf import settings
+from pathlib import Path
 
 
 class Command(BaseCommand):
@@ -85,16 +86,55 @@ class Command(BaseCommand):
         self.stdout.write('='*50)
         
         # Выводим статистику
-        from core.models import BusinessValue, TrainingProgram, JobInstruction, CoffeeInfo
+        self.print_statistics()
         
-        self.stdout.write('\nСтатистика:')
-        self.stdout.write(f'• Бизнес-ценности: {BusinessValue.objects.count()}')
-        self.stdout.write(f'• Программы обучения: {TrainingProgram.objects.count()}')
-        self.stdout.write(f'• Должностные инструкции: {JobInstruction.objects.count()}')
-        self.stdout.write(f'• Информация о кофе: {CoffeeInfo.objects.count()}')
+        # Создаем фикстуры для будущего использования
+        self.stdout.write('\n📦 Создаем фикстуры из импортированных данных...')
+        try:
+            call_command('export_fixtures', clear=True)
+            self.stdout.write(self.style.SUCCESS('✅ Фикстуры созданы!'))
+        except Exception as e:
+            self.stdout.write(
+                self.style.WARNING(f'⚠️  Не удалось создать фикстуры: {e}')
+            )
         
         self.stdout.write('\nТеперь вы можете:')
         self.stdout.write('1. Зайти в админку: http://127.0.0.1:8000/admin/')
         self.stdout.write('2. Просмотреть и отредактировать импортированные данные')
         self.stdout.write('3. Добавить переводы для многоязычности')
         self.stdout.write('4. Перейти к созданию views и templates')
+
+    def print_statistics(self):
+        """Выводит статистику импортированных данных"""
+        from core.models import BusinessValue, TrainingProgram, JobInstruction, CoffeeInfo
+        
+        self.stdout.write('\n' + '='*50)
+        self.stdout.write('СТАТИСТИКА ИМПОРТА:')
+        self.stdout.write('='*50)
+        
+        models = [
+            ('Бизнес-ценности', BusinessValue),
+            ('Программы обучения', TrainingProgram),
+            ('Должностные инструкции', JobInstruction),
+            ('Информация о кофе', CoffeeInfo),
+        ]
+        
+        total_records = 0
+        for name, model in models:
+            count = model.objects.count()
+            total_records += count
+            status = '✅' if count > 0 else '❌'
+            self.stdout.write(f'{status} {name}: {count} записей')
+        
+        self.stdout.write('='*50)
+        self.stdout.write(f'ИТОГО: {total_records} записей')
+        self.stdout.write('='*50)
+        
+        if total_records >= 55:  # Ожидаем минимум 55 записей
+            self.stdout.write(
+                self.style.SUCCESS('🎉 Импорт прошел успешно!')
+            )
+        else:
+            self.stdout.write(
+                self.style.WARNING(f'⚠️  Ожидалось больше записей, импортировано {total_records}')
+            )
