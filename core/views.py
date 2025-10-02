@@ -23,7 +23,7 @@ def home(request):
     }
     
     context = {
-        'page_title': 'Дом Кофе - Образовательный портал',
+        'page_title': 'Dim Kava - Образовательный портал',
         'stats': stats,
     }
     

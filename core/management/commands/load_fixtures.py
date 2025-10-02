@@ -37,7 +37,7 @@ class Command(BaseCommand):
         all_data_fixture = fixtures_dir / 'all_data.json'
         
         if all_data_fixture.exists():
-            self.stdout.write(f'✅ Найдена фикстура: {all_data_fixture}')
+            self.stdout.write(f'[OK] Найдена фикстура: {all_data_fixture}')
             
             # Очищаем данные если нужно
             if clear:
@@ -47,7 +47,7 @@ class Command(BaseCommand):
             try:
                 call_command('loaddata', 'all_data', verbosity=0)
                 self.stdout.write(
-                    self.style.SUCCESS('✅ Данные успешно загружены из фикстуры!')
+                    self.style.SUCCESS('[OK] Данные успешно загружены из фикстуры!')
                 )
                 
                 # Показываем статистику
@@ -76,7 +76,7 @@ class Command(BaseCommand):
             try:
                 call_command('import_all_data', clear=clear)
                 self.stdout.write(
-                    self.style.SUCCESS('✅ Fallback импорт завершен успешно!')
+                    self.style.SUCCESS('[OK] Fallback импорт завершен успешно!')
                 )
                 
                 # Показываем статистику
@@ -104,7 +104,7 @@ class Command(BaseCommand):
             count = model.objects.count()
             if count > 0:
                 model.objects.all().delete()
-                self.stdout.write(f'✅ Очищено {count} записей из {model.__name__}')
+                self.stdout.write(f'[OK] Очищено {count} записей из {model.__name__}')
 
     def print_statistics(self):
         """Выводит статистику загруженных данных"""
@@ -126,7 +126,7 @@ class Command(BaseCommand):
         for name, model in models:
             count = model.objects.count()
             total_records += count
-            status = '✅' if count > 0 else '❌'
+            status = '[OK]' if count > 0 else '❌'
             self.stdout.write(f'{status} {name}: {count} записей')
         
         self.stdout.write('='*50)

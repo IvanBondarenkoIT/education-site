@@ -42,44 +42,44 @@ class Command(BaseCommand):
             self.stdout.write('\n1. Импорт бизнес-ценностей...')
             try:
                 call_command('import_business_values', clear=options['clear'])
-                self.stdout.write(self.style.SUCCESS('✓ Бизнес-ценности импортированы'))
+                self.stdout.write(self.style.SUCCESS('[OK] Бизнес-ценности импортированы'))
             except Exception as e:
-                self.stdout.write(self.style.ERROR(f'✗ Ошибка импорта бизнес-ценностей: {e}'))
+                self.stdout.write(self.style.ERROR(f'[ERROR] Ошибка импорта бизнес-ценностей: {e}'))
         else:
-            self.stdout.write('⏭ Пропущен импорт бизнес-ценностей')
+            self.stdout.write('[SKIP] Пропущен импорт бизнес-ценностей')
 
         # Импорт программы обучения
         if not options['skip_training']:
             self.stdout.write('\n2. Импорт программы обучения...')
             try:
                 call_command('import_training_program', clear=options['clear'])
-                self.stdout.write(self.style.SUCCESS('✓ Программа обучения импортирована'))
+                self.stdout.write(self.style.SUCCESS('[OK] Программа обучения импортирована'))
             except Exception as e:
-                self.stdout.write(self.style.ERROR(f'✗ Ошибка импорта программы обучения: {e}'))
+                self.stdout.write(self.style.ERROR(f'[ERROR] Ошибка импорта программы обучения: {e}'))
         else:
-            self.stdout.write('⏭ Пропущен импорт программы обучения')
+            self.stdout.write('[SKIP] Пропущен импорт программы обучения')
 
         # Импорт должностных инструкций
         if not options['skip_instructions']:
             self.stdout.write('\n3. Импорт должностных инструкций...')
             try:
                 call_command('import_job_instructions', clear=options['clear'])
-                self.stdout.write(self.style.SUCCESS('✓ Должностные инструкции импортированы'))
+                self.stdout.write(self.style.SUCCESS('[OK] Должностные инструкции импортированы'))
             except Exception as e:
-                self.stdout.write(self.style.ERROR(f'✗ Ошибка импорта должностных инструкций: {e}'))
+                self.stdout.write(self.style.ERROR(f'[ERROR] Ошибка импорта должностных инструкций: {e}'))
         else:
-            self.stdout.write('⏭ Пропущен импорт должностных инструкций')
+            self.stdout.write('[SKIP] Пропущен импорт должностных инструкций')
 
         # Импорт информации о кофе
         if not options['skip_coffee']:
             self.stdout.write('\n4. Импорт информации о кофе...')
             try:
                 call_command('import_coffee_info', clear=options['clear'])
-                self.stdout.write(self.style.SUCCESS('✓ Информация о кофе импортирована'))
+                self.stdout.write(self.style.SUCCESS('[OK] Информация о кофе импортирована'))
             except Exception as e:
-                self.stdout.write(self.style.ERROR(f'✗ Ошибка импорта информации о кофе: {e}'))
+                self.stdout.write(self.style.ERROR(f'[ERROR] Ошибка импорта информации о кофе: {e}'))
         else:
-            self.stdout.write('⏭ Пропущен импорт информации о кофе')
+            self.stdout.write('[SKIP] Пропущен импорт информации о кофе')
 
         self.stdout.write('\n' + '='*50)
         self.stdout.write(self.style.SUCCESS('Импорт всех данных завершен!'))
@@ -92,7 +92,7 @@ class Command(BaseCommand):
         self.stdout.write('\n📦 Создаем фикстуры из импортированных данных...')
         try:
             call_command('export_fixtures', clear=True)
-            self.stdout.write(self.style.SUCCESS('✅ Фикстуры созданы!'))
+            self.stdout.write(self.style.SUCCESS('[OK] Фикстуры созданы!'))
         except Exception as e:
             self.stdout.write(
                 self.style.WARNING(f'⚠️  Не удалось создать фикстуры: {e}')
@@ -123,7 +123,7 @@ class Command(BaseCommand):
         for name, model in models:
             count = model.objects.count()
             total_records += count
-            status = '✅' if count > 0 else '❌'
+            status = '[OK]' if count > 0 else '❌'
             self.stdout.write(f'{status} {name}: {count} записей')
         
         self.stdout.write('='*50)
@@ -132,7 +132,7 @@ class Command(BaseCommand):
         
         if total_records >= 55:  # Ожидаем минимум 55 записей
             self.stdout.write(
-                self.style.SUCCESS('🎉 Импорт прошел успешно!')
+                self.style.SUCCESS('[SUCCESS] Импорт прошел успешно!')
             )
         else:
             self.stdout.write(
