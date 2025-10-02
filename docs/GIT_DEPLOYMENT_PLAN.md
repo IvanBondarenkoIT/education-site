@@ -91,7 +91,7 @@ git status
 
 ### 4. Коммит
 ```bash
-git commit -m "feat: Добавлен Django сайт Дом Кофе
+git commit -m "feat: Добавлен Django сайт Dim Kava
 
 - Создано Django приложение с многоязычностью
 - Добавлены модели: BusinessValue, TrainingProgram, JobInstruction, CoffeeInfo
@@ -190,6 +190,9 @@ python manage.py runserver
 
 **Статус:** Готов к безопасной выгрузке  
 **Дата:** 26 августа 2025
+
+
+
 
 
 

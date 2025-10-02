@@ -83,7 +83,7 @@ class HomePageTest(BaseTestCase):
         response = self.client.get(reverse('core:home'))
         self.assertIn('page_title', response.context)
         self.assertIn('stats', response.context)
-        self.assertEqual(response.context['page_title'], 'Дом Кофе - Образовательный портал')
+        self.assertEqual(response.context['page_title'], 'Dim Kava - Образовательный портал')
     
     def test_home_page_stats(self):
         """Проверяем статистику на главной странице"""

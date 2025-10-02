@@ -77,7 +77,7 @@ class Command(BaseCommand):
         self.print_statistics()
 
         self.stdout.write(
-            self.style.SUCCESS('✅ Экспорт фикстур завершен успешно!')
+            self.style.SUCCESS('[OK] Экспорт фикстур завершен успешно!')
         )
 
     def export_model_data(self, queryset, model_name, output_dir, separate_files):
@@ -101,7 +101,7 @@ class Command(BaseCommand):
                 json.dump(data, f, ensure_ascii=False, indent=2)
             
             self.stdout.write(
-                f'✅ Создан файл: {fixture_file} ({len(data)} записей)'
+                f'[OK] Создан файл: {fixture_file} ({len(data)} записей)'
             )
         
         return data
@@ -124,7 +124,7 @@ class Command(BaseCommand):
                 serialized = serialize('json', queryset)
                 data = json.loads(serialized)
                 all_data.extend(data)
-                self.stdout.write(f'✅ Добавлены {queryset.count()} записей из {model_name}')
+                self.stdout.write(f'[OK] Добавлены {queryset.count()} записей из {model_name}')
         
         # Сохраняем общий файл
         all_data_file = output_dir / 'all_data.json'
@@ -132,7 +132,7 @@ class Command(BaseCommand):
             json.dump(all_data, f, ensure_ascii=False, indent=2)
         
         self.stdout.write(
-            f'✅ Создан общий файл: {all_data_file} ({len(all_data)} записей)'
+            f'[OK] Создан общий файл: {all_data_file} ({len(all_data)} записей)'
         )
 
     def print_statistics(self):
