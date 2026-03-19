@@ -29,6 +29,13 @@ DEBUG = os.environ.get('DEBUG', 'True') == 'True'
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', '0.0.0.0', '.railway.app']
 
+# CSRF — для форм на Railway (логин, переключение языка и т.д.)
+CSRF_TRUSTED_ORIGINS = [
+    'https://education-site-production.up.railway.app',
+]
+if domain := os.environ.get('RAILWAY_PUBLIC_DOMAIN'):
+    CSRF_TRUSTED_ORIGINS.append(f'https://{domain}')
+
 
 # Application definition
 
