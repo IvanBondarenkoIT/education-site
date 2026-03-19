@@ -17,10 +17,11 @@ python manage.py import_job_instructions
 python manage.py import_coffee_info
 ```
 
-### Новый вариант (с фикстурами):
+### Текущий вариант (идемпотентный, при каждом деплое):
 ```bash
-python manage.py loaddata all_data
+python manage.py load_fixtures --clear
 ```
+Очищает контент-модели и загружает свежие данные из `all_data.json`. Гарантирует актуальность контента при повторных деплоях.
 
 ## 📊 Ожидаемый результат
 
@@ -40,10 +41,12 @@ python manage.py loaddata all_data
 
 2. **Railway автоматически:**
    - Применит миграции
-   - Создаст языки
-   - Загрузит данные из фикстур
+   - Загрузит фикстуры (`load_fixtures --clear`)
+   - Создаст админа (`create_default_admin`)
    - Соберет статические файлы
    - Запустит приложение
+
+   **Важно:** Задайте `ADMIN_PASSWORD` в переменных окружения Railway для продакшена.
 
 3. **Проверить результат:**
    - Открыть Railway Dashboard
@@ -60,6 +63,13 @@ python manage.py loaddata all_data
 - CoffeeInfo: 5 записей
 
 **ИТОГО: 59 записей**
+
+## 📝 Обновление контента (content/ → Railway)
+
+1. Редактировать файлы в `content/` (markdown).
+2. Локально: `python manage.py sync_content_from_md --clear` — синхронизирует в БД и обновляет `all_data.json`.
+3. Коммит и push: `git add core/fixtures/all_data.json && git commit -m "Update content" && git push`.
+4. Railway при деплое выполнит `load_fixtures --clear` и подхватит новый контент.
 
 ## 📁 Структура фикстур
 
