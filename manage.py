@@ -3,6 +3,13 @@
 import os
 import sys
 
+# Load .env before Django
+from pathlib import Path
+env_path = Path(__file__).resolve().parent / '.env'
+if env_path.exists():
+    from dotenv import load_dotenv
+    load_dotenv(env_path)
+
 
 def main():
     """Run administrative tasks."""
