@@ -49,73 +49,136 @@
   },
   {
     "model": "core.businessvalue",
-    "pk": 34,
+    "pk": 67,
     "fields": {
-      "situation": "Соблюдение\n\t\t\t\t\tстандартов кофейной карты.",
-      "situation_ru": "Соблюдение\n\t\t\t\t\tстандартов кофейной карты.",
+      "situation": "Соблюдение стандартов кофейной карты.",
+      "situation_ru": "Соблюдение стандартов кофейной карты.",
       "situation_uk": null,
       "situation_en": null,
       "situation_ge": null,
-      "business_value": "компетентность,\n\t\t\t\tэспрессо культура, уникальность",
-      "business_value_ru": "компетентность,\n\t\t\t\tэспрессо культура, уникальность",
+      "business_value": "компетентность, эспрессо культура, уникальность",
+      "business_value_ru": "компетентность, эспрессо культура, уникальность",
+      "business_value_uk": null,
+      "business_value_en": null,
+      "business_value_ge": null,
+      "category": "competence",
+      "order": 0,
+      "is_active": true,
+      "created_at": "2026-03-19T15:33:35.924Z",
+      "updated_at": "2026-03-19T15:33:35.924Z"
+    }
+  },
+  {
+    "model": "core.businessvalue",
+    "pk": 68,
+    "fields": {
+      "situation": "Информируем клиента о стандартах, скидках, событиях и акциях компании.",
+      "situation_ru": "Информируем клиента о стандартах, скидках, событиях и акциях компании.",
+      "situation_uk": null,
+      "situation_en": null,
+      "situation_ge": null,
+      "business_value": "лидерство, компетентность",
+      "business_value_ru": "лидерство, компетентность",
       "business_value_uk": null,
       "business_value_en": null,
       "business_value_ge": null,
       "category": "competence",
       "order": 1,
       "is_active": true,
-      "created_at": "2025-08-21T13:36:08.215Z",
-      "updated_at": "2025-08-21T13:36:08.215Z"
+      "created_at": "2026-03-19T15:33:35.951Z",
+      "updated_at": "2026-03-19T15:33:35.951Z"
     }
   },
   {
     "model": "core.businessvalue",
-    "pk": 36,
+    "pk": 69,
     "fields": {
-      "situation": "Информируем\n\t\t\t\t\tклиента о стандартах, скидках, событиях\n\t\t\t\t\tи акциях компании.",
-      "situation_ru": "Информируем\n\t\t\t\t\tклиента о стандартах, скидках, событиях\n\t\t\t\t\tи акциях компании.",
+      "situation": "Грамотность речи, опрятный внешний вид сотрудника.",
+      "situation_ru": "Грамотность речи, опрятный внешний вид сотрудника.",
       "situation_uk": null,
       "situation_en": null,
       "situation_ge": null,
-      "business_value": "лидерство,\n\t\t\t\tкомпетентность",
-      "business_value_ru": "лидерство,\n\t\t\t\tкомпетентность",
+      "business_value": "компетентность, уникальность",
+      "business_value_ru": "компетентность, уникальность",
+      "business_value_uk": null,
+      "business_value_en": null,
+      "business_value_ge": null,
+      "category": "competence",
+      "order": 2,
+      "is_active": true,
+      "created_at": "2026-03-19T15:33:35.977Z",
+      "updated_at": "2026-03-19T15:33:35.977Z"
+    }
+  },
+  {
+    "model": "core.businessvalue",
+    "pk": 70,
+    "fields": {
+      "situation": "Грамотное оформление чеков при продаже.",
+      "situation_ru": "Грамотное оформление чеков при продаже.",
+      "situation_uk": null,
+      "situation_en": null,
+      "situation_ge": null,
+      "business_value": "компетентность",
+      "business_value_ru": "компетентность",
       "business_value_uk": null,
       "business_value_en": null,
       "business_value_ge": null,
       "category": "competence",
       "order": 3,
       "is_active": true,
-      "created_at": "2025-08-21T13:36:08.224Z",
-      "updated_at": "2025-08-21T13:36:08.224Z"
+      "created_at": "2026-03-19T15:33:36.003Z",
+      "updated_at": "2026-03-19T15:33:36.003Z"
     }
   },
   {
     "model": "core.businessvalue",
-    "pk": 38,
+    "pk": 71,
     "fields": {
-      "situation": "Грамотность\n\t\t\t\t\tречи, опрятный внешний вид сотрудника.",
-      "situation_ru": "Грамотность\n\t\t\t\t\tречи, опрятный внешний вид сотрудника.",
+      "situation": "Всегда хорошее настроение на работе и желание помочь клиенту.",
+      "situation_ru": "Всегда хорошее настроение на работе и желание помочь клиенту.",
       "situation_uk": null,
       "situation_en": null,
       "situation_ge": null,
-      "business_value": "компетентность,\n\t\t\t\tуникальность",
-      "business_value_ru": "компетентность,\n\t\t\t\tуникальность",
+      "business_value": "компетентность, лидерство",
+      "business_value_ru": "компетентность, лидерство",
+      "business_value_uk": null,
+      "business_value_en": null,
+      "business_value_ge": null,
+      "category": "competence",
+      "order": 4,
+      "is_active": true,
+      "created_at": "2026-03-19T15:33:36.035Z",
+      "updated_at": "2026-03-19T15:33:36.035Z"
+    }
+  },
+  {
+    "model": "core.businessvalue",
+    "pk": 72,
+    "fields": {
+      "situation": "Участие в написании и проведении тренингов.",
+      "situation_ru": "Участие в написании и проведении тренингов.",
+      "situation_uk": null,
+      "situation_en": null,
+      "situation_ge": null,
+      "business_value": "лидерство, команда, компетентность",
+      "business_value_ru": "лидерство, команда, компетентность",
       "business_value_uk": null,
       "business_value_en": null,
       "business_value_ge": null,
       "category": "competence",
       "order": 5,
       "is_active": true,
-      "created_at": "2025-08-21T13:36:08.233Z",
-      "updated_at": "2025-08-21T13:36:08.233Z"
+      "created_at": "2026-03-19T15:33:36.061Z",
+      "updated_at": "2026-03-19T15:33:36.061Z"
     }
   },
   {
     "model": "core.businessvalue",
-    "pk": 39,
+    "pk": 73,
     "fields": {
-      "situation": "Грамотное\n\t\t\t\t\tоформление чеков при продаже.",
-      "situation_ru": "Грамотное\n\t\t\t\t\tоформление чеков при продаже.",
+      "situation": "Грамотное построение вопросов в работе с клиентом.",
+      "situation_ru": "Грамотное построение вопросов в работе с клиентом.",
       "situation_uk": null,
       "situation_en": null,
       "situation_ge": null,
@@ -127,289 +190,226 @@
       "category": "competence",
       "order": 6,
       "is_active": true,
-      "created_at": "2025-08-21T13:36:08.237Z",
-      "updated_at": "2025-08-21T13:36:08.237Z"
+      "created_at": "2026-03-19T15:33:36.083Z",
+      "updated_at": "2026-03-19T15:33:36.083Z"
     }
   },
   {
     "model": "core.businessvalue",
-    "pk": 43,
+    "pk": 74,
     "fields": {
-      "situation": "Всегда\n\t\t\t\t\tхорошее настроение на работе и желание\n\t\t\t\t\tпомочь клиенту.",
-      "situation_ru": "Всегда\n\t\t\t\t\tхорошее настроение на работе и желание\n\t\t\t\t\tпомочь клиенту.",
+      "situation": "Настоять на тестировании оборудования при продаже, даже если клиент в этом не заинтересован.",
+      "situation_ru": "Настоять на тестировании оборудования при продаже, даже если клиент в этом не заинтересован.",
       "situation_uk": null,
       "situation_en": null,
       "situation_ge": null,
-      "business_value": "компетентность,\n\t\t\t\tлидерство",
-      "business_value_ru": "компетентность,\n\t\t\t\tлидерство",
+      "business_value": "лидерство, компетентность",
+      "business_value_ru": "лидерство, компетентность",
+      "business_value_uk": null,
+      "business_value_en": null,
+      "business_value_ge": null,
+      "category": "competence",
+      "order": 7,
+      "is_active": true,
+      "created_at": "2026-03-19T15:33:36.102Z",
+      "updated_at": "2026-03-19T15:33:36.102Z"
+    }
+  },
+  {
+    "model": "core.businessvalue",
+    "pk": 75,
+    "fields": {
+      "situation": "Корректные замечания членам команды.",
+      "situation_ru": "Корректные замечания членам команды.",
+      "situation_uk": null,
+      "situation_en": null,
+      "situation_ge": null,
+      "business_value": "лидерство, компетентность",
+      "business_value_ru": "лидерство, компетентность",
+      "business_value_uk": null,
+      "business_value_en": null,
+      "business_value_ge": null,
+      "category": "competence",
+      "order": 8,
+      "is_active": true,
+      "created_at": "2026-03-19T15:33:36.129Z",
+      "updated_at": "2026-03-19T15:33:36.129Z"
+    }
+  },
+  {
+    "model": "core.businessvalue",
+    "pk": 76,
+    "fields": {
+      "situation": "Соблюдение высоких стандартов приготовления кофейных напитков.",
+      "situation_ru": "Соблюдение высоких стандартов приготовления кофейных напитков.",
+      "situation_uk": null,
+      "situation_en": null,
+      "situation_ge": null,
+      "business_value": "компетентность, эспрессо культура",
+      "business_value_ru": "компетентность, эспрессо культура",
+      "business_value_uk": null,
+      "business_value_en": null,
+      "business_value_ge": null,
+      "category": "competence",
+      "order": 9,
+      "is_active": true,
+      "created_at": "2026-03-19T15:33:36.164Z",
+      "updated_at": "2026-03-19T15:33:36.164Z"
+    }
+  },
+  {
+    "model": "core.businessvalue",
+    "pk": 77,
+    "fields": {
+      "situation": "Работа с каждым клиентом вне зависимости от его настроя и уровня развития в кофейной сфере.",
+      "situation_ru": "Работа с каждым клиентом вне зависимости от его настроя и уровня развития в кофейной сфере.",
+      "situation_uk": null,
+      "situation_en": null,
+      "situation_ge": null,
+      "business_value": "компетентность, лидерство",
+      "business_value_ru": "компетентность, лидерство",
       "business_value_uk": null,
       "business_value_en": null,
       "business_value_ge": null,
       "category": "competence",
       "order": 10,
       "is_active": true,
-      "created_at": "2025-08-21T13:36:08.257Z",
-      "updated_at": "2025-08-21T13:36:08.257Z"
+      "created_at": "2026-03-19T15:33:36.211Z",
+      "updated_at": "2026-03-19T15:33:36.211Z"
     }
   },
   {
     "model": "core.businessvalue",
-    "pk": 45,
+    "pk": 78,
     "fields": {
-      "situation": "Участие\n\t\t\t\t\tв написании и проведении тренингов.",
-      "situation_ru": "Участие\n\t\t\t\t\tв написании и проведении тренингов.",
+      "situation": "Развитие себя как дегустатора",
+      "situation_ru": "Развитие себя как дегустатора",
       "situation_uk": null,
       "situation_en": null,
       "situation_ge": null,
-      "business_value": "лидерство,\n\t\t\t\tкоманда, компетентность",
-      "business_value_ru": "лидерство,\n\t\t\t\tкоманда, компетентность",
+      "business_value": "эспрессо культура, лидерство, компетентность",
+      "business_value_ru": "эспрессо культура, лидерство, компетентность",
+      "business_value_uk": null,
+      "business_value_en": null,
+      "business_value_ge": null,
+      "category": "competence",
+      "order": 11,
+      "is_active": true,
+      "created_at": "2026-03-19T15:33:36.239Z",
+      "updated_at": "2026-03-19T15:33:36.239Z"
+    }
+  },
+  {
+    "model": "core.businessvalue",
+    "pk": 79,
+    "fields": {
+      "situation": "Грамотная работа с любыми возражениями клиента.",
+      "situation_ru": "Грамотная работа с любыми возражениями клиента.",
+      "situation_uk": null,
+      "situation_en": null,
+      "situation_ge": null,
+      "business_value": "компетентность",
+      "business_value_ru": "компетентность",
       "business_value_uk": null,
       "business_value_en": null,
       "business_value_ge": null,
       "category": "competence",
       "order": 12,
       "is_active": true,
-      "created_at": "2025-08-21T13:36:08.265Z",
-      "updated_at": "2025-08-21T13:36:08.265Z"
+      "created_at": "2026-03-19T15:33:36.264Z",
+      "updated_at": "2026-03-19T15:33:36.264Z"
     }
   },
   {
     "model": "core.businessvalue",
-    "pk": 48,
+    "pk": 80,
     "fields": {
-      "situation": "Грамотное\n\t\t\t\t\tпостроение вопросов в работе с\n\t\t\t\t\tклиентом.",
-      "situation_ru": "Грамотное\n\t\t\t\t\tпостроение вопросов в работе с\n\t\t\t\t\tклиентом.",
+      "situation": "Чистое рабочее оборудование.",
+      "situation_ru": "Чистое рабочее оборудование.",
       "situation_uk": null,
       "situation_en": null,
       "situation_ge": null,
-      "business_value": "компетентность",
-      "business_value_ru": "компетентность",
+      "business_value": "эспрессо культура, компетентность",
+      "business_value_ru": "эспрессо культура, компетентность",
+      "business_value_uk": null,
+      "business_value_en": null,
+      "business_value_ge": null,
+      "category": "competence",
+      "order": 13,
+      "is_active": true,
+      "created_at": "2026-03-19T15:33:36.287Z",
+      "updated_at": "2026-03-19T15:33:36.289Z"
+    }
+  },
+  {
+    "model": "core.businessvalue",
+    "pk": 81,
+    "fields": {
+      "situation": "Наличие всего ассортимента товара.",
+      "situation_ru": "Наличие всего ассортимента товара.",
+      "situation_uk": null,
+      "situation_en": null,
+      "situation_ge": null,
+      "business_value": "лидерство, компетентность",
+      "business_value_ru": "лидерство, компетентность",
+      "business_value_uk": null,
+      "business_value_en": null,
+      "business_value_ge": null,
+      "category": "competence",
+      "order": 14,
+      "is_active": true,
+      "created_at": "2026-03-19T15:33:36.308Z",
+      "updated_at": "2026-03-19T15:33:36.308Z"
+    }
+  },
+  {
+    "model": "core.businessvalue",
+    "pk": 82,
+    "fields": {
+      "situation": "Участие в Чемпионатах Бариста, Кап Тестинг, Латте – арт.",
+      "situation_ru": "Участие в Чемпионатах Бариста, Кап Тестинг, Латте – арт.",
+      "situation_uk": null,
+      "situation_en": null,
+      "situation_ge": null,
+      "business_value": "лидерство, компетентность, эспрессо культура",
+      "business_value_ru": "лидерство, компетентность, эспрессо культура",
       "business_value_uk": null,
       "business_value_en": null,
       "business_value_ge": null,
       "category": "competence",
       "order": 15,
       "is_active": true,
-      "created_at": "2025-08-21T13:36:08.277Z",
-      "updated_at": "2025-08-21T13:36:08.277Z"
+      "created_at": "2026-03-19T15:33:36.346Z",
+      "updated_at": "2026-03-19T15:33:36.346Z"
     }
   },
   {
     "model": "core.businessvalue",
-    "pk": 49,
+    "pk": 83,
     "fields": {
-      "situation": "Настоять\n\t\t\t\t\tна тестировании оборудования при\n\t\t\t\t\tпродаже, даже если клиент в этом не\n\t\t\t\t\tзаинтересован.",
-      "situation_ru": "Настоять\n\t\t\t\t\tна тестировании оборудования при\n\t\t\t\t\tпродаже, даже если клиент в этом не\n\t\t\t\t\tзаинтересован.",
+      "situation": "Умение слушать, слышать и наблюдать за клиентом.",
+      "situation_ru": "Умение слушать, слышать и наблюдать за клиентом.",
       "situation_uk": null,
       "situation_en": null,
       "situation_ge": null,
-      "business_value": "лидерство,\n\t\t\t\tкомпетентность",
-      "business_value_ru": "лидерство,\n\t\t\t\tкомпетентность",
+      "business_value": "лидерство, компетентность, уникальность",
+      "business_value_ru": "лидерство, компетентность, уникальность",
       "business_value_uk": null,
       "business_value_en": null,
       "business_value_ge": null,
       "category": "competence",
       "order": 16,
       "is_active": true,
-      "created_at": "2025-08-21T13:36:08.282Z",
-      "updated_at": "2025-08-21T13:36:08.282Z"
+      "created_at": "2026-03-19T15:33:36.376Z",
+      "updated_at": "2026-03-19T15:33:36.376Z"
     }
   },
   {
     "model": "core.businessvalue",
-    "pk": 52,
+    "pk": 84,
     "fields": {
-      "situation": "Корректные\n\t\t\t\t\tзамечания членам команды.",
-      "situation_ru": "Корректные\n\t\t\t\t\tзамечания членам команды.",
-      "situation_uk": null,
-      "situation_en": null,
-      "situation_ge": null,
-      "business_value": "лидерство,\n\t\t\t\tкомпетентность",
-      "business_value_ru": "лидерство,\n\t\t\t\tкомпетентность",
-      "business_value_uk": null,
-      "business_value_en": null,
-      "business_value_ge": null,
-      "category": "competence",
-      "order": 19,
-      "is_active": true,
-      "created_at": "2025-08-21T13:36:08.293Z",
-      "updated_at": "2025-08-21T13:36:08.294Z"
-    }
-  },
-  {
-    "model": "core.businessvalue",
-    "pk": 54,
-    "fields": {
-      "situation": "Соблюдение\n\t\t\t\t\tвысоких стандартов приготовления\n\t\t\t\t\tкофейных напитков.",
-      "situation_ru": "Соблюдение\n\t\t\t\t\tвысоких стандартов приготовления\n\t\t\t\t\tкофейных напитков.",
-      "situation_uk": null,
-      "situation_en": null,
-      "situation_ge": null,
-      "business_value": "компетентность,\n\t\t\t\tэспрессо культура",
-      "business_value_ru": "компетентность,\n\t\t\t\tэспрессо культура",
-      "business_value_uk": null,
-      "business_value_en": null,
-      "business_value_ge": null,
-      "category": "competence",
-      "order": 21,
-      "is_active": true,
-      "created_at": "2025-08-21T13:36:08.302Z",
-      "updated_at": "2025-08-21T13:36:08.302Z"
-    }
-  },
-  {
-    "model": "core.businessvalue",
-    "pk": 55,
-    "fields": {
-      "situation": "Работа\n\t\t\t\t\tс каждым клиентом вне зависимости\n\t\t\t\t\tот его настроя и уровня развития в\n\t\t\t\t\tкофейной сфере.",
-      "situation_ru": "Работа\n\t\t\t\t\tс каждым клиентом вне зависимости\n\t\t\t\t\tот его настроя и уровня развития в\n\t\t\t\t\tкофейной сфере.",
-      "situation_uk": null,
-      "situation_en": null,
-      "situation_ge": null,
-      "business_value": "компетентность,\n\t\t\t\tлидерство",
-      "business_value_ru": "компетентность,\n\t\t\t\tлидерство",
-      "business_value_uk": null,
-      "business_value_en": null,
-      "business_value_ge": null,
-      "category": "competence",
-      "order": 22,
-      "is_active": true,
-      "created_at": "2025-08-21T13:36:08.306Z",
-      "updated_at": "2025-08-21T13:36:08.306Z"
-    }
-  },
-  {
-    "model": "core.businessvalue",
-    "pk": 56,
-    "fields": {
-      "situation": "Развитие\n\t\t\t\t\tсебя как дегустатора",
-      "situation_ru": "Развитие\n\t\t\t\t\tсебя как дегустатора",
-      "situation_uk": null,
-      "situation_en": null,
-      "situation_ge": null,
-      "business_value": "эспрессо\n\t\t\t\tкультура, лидерство, компетентность",
-      "business_value_ru": "эспрессо\n\t\t\t\tкультура, лидерство, компетентность",
-      "business_value_uk": null,
-      "business_value_en": null,
-      "business_value_ge": null,
-      "category": "competence",
-      "order": 23,
-      "is_active": true,
-      "created_at": "2025-08-21T13:36:08.310Z",
-      "updated_at": "2025-08-21T13:36:08.310Z"
-    }
-  },
-  {
-    "model": "core.businessvalue",
-    "pk": 59,
-    "fields": {
-      "situation": "Грамотная\n\t\t\t\t\tработа с любыми возражениями клиента.",
-      "situation_ru": "Грамотная\n\t\t\t\t\tработа с любыми возражениями клиента.",
-      "situation_uk": null,
-      "situation_en": null,
-      "situation_ge": null,
-      "business_value": "компетентность",
-      "business_value_ru": "компетентность",
-      "business_value_uk": null,
-      "business_value_en": null,
-      "business_value_ge": null,
-      "category": "competence",
-      "order": 26,
-      "is_active": true,
-      "created_at": "2025-08-21T13:36:08.323Z",
-      "updated_at": "2025-08-21T13:36:08.323Z"
-    }
-  },
-  {
-    "model": "core.businessvalue",
-    "pk": 60,
-    "fields": {
-      "situation": "Чистое\n\t\t\t\t\tрабочее оборудование.",
-      "situation_ru": "Чистое\n\t\t\t\t\tрабочее оборудование.",
-      "situation_uk": null,
-      "situation_en": null,
-      "situation_ge": null,
-      "business_value": "эспрессо\n\t\t\t\tкультура, компетентность",
-      "business_value_ru": "эспрессо\n\t\t\t\tкультура, компетентность",
-      "business_value_uk": null,
-      "business_value_en": null,
-      "business_value_ge": null,
-      "category": "competence",
-      "order": 27,
-      "is_active": true,
-      "created_at": "2025-08-21T13:36:08.327Z",
-      "updated_at": "2025-08-21T13:36:08.327Z"
-    }
-  },
-  {
-    "model": "core.businessvalue",
-    "pk": 61,
-    "fields": {
-      "situation": "Наличие\n\t\t\t\t\tвсего ассортимента товара.",
-      "situation_ru": "Наличие\n\t\t\t\t\tвсего ассортимента товара.",
-      "situation_uk": null,
-      "situation_en": null,
-      "situation_ge": null,
-      "business_value": "лидерство,\n\t\t\t\tкомпетентность",
-      "business_value_ru": "лидерство,\n\t\t\t\tкомпетентность",
-      "business_value_uk": null,
-      "business_value_en": null,
-      "business_value_ge": null,
-      "category": "competence",
-      "order": 28,
-      "is_active": true,
-      "created_at": "2025-08-21T13:36:08.332Z",
-      "updated_at": "2025-08-21T13:36:08.332Z"
-    }
-  },
-  {
-    "model": "core.businessvalue",
-    "pk": 64,
-    "fields": {
-      "situation": "Участие\n\t\t\t\t\tв Чемпионатах Бариста, Кап Тестинг,\n\t\t\t\t\tЛатте – арт.",
-      "situation_ru": "Участие\n\t\t\t\t\tв Чемпионатах Бариста, Кап Тестинг,\n\t\t\t\t\tЛатте – арт.",
-      "situation_uk": null,
-      "situation_en": null,
-      "situation_ge": null,
-      "business_value": "лидерство,\n\t\t\t\tкомпетентность, эспрессо культура",
-      "business_value_ru": "лидерство,\n\t\t\t\tкомпетентность, эспрессо культура",
-      "business_value_uk": null,
-      "business_value_en": null,
-      "business_value_ge": null,
-      "category": "competence",
-      "order": 31,
-      "is_active": true,
-      "created_at": "2025-08-21T13:36:08.347Z",
-      "updated_at": "2025-08-21T13:36:08.347Z"
-    }
-  },
-  {
-    "model": "core.businessvalue",
-    "pk": 65,
-    "fields": {
-      "situation": "Умение\n\t\t\t\t\tслушать, слышать и наблюдать за\n\t\t\t\t\tклиентом.",
-      "situation_ru": "Умение\n\t\t\t\t\tслушать, слышать и наблюдать за\n\t\t\t\t\tклиентом.",
-      "situation_uk": null,
-      "situation_en": null,
-      "situation_ge": null,
-      "business_value": "лидерство,\n\t\t\t\tкомпетентность, уникальность",
-      "business_value_ru": "лидерство,\n\t\t\t\tкомпетентность, уникальность",
-      "business_value_uk": null,
-      "business_value_en": null,
-      "business_value_ge": null,
-      "category": "competence",
-      "order": 32,
-      "is_active": true,
-      "created_at": "2025-08-21T13:36:08.351Z",
-      "updated_at": "2025-08-21T13:36:08.351Z"
-    }
-  },
-  {
-    "model": "core.businessvalue",
-    "pk": 66,
-    "fields": {
-      "situation": "Заинтересованность\n\t\t\t\t\tв успехе каждого работника.",
-      "situation_ru": "Заинтересованность\n\t\t\t\t\tв успехе каждого работника.",
+      "situation": "Заинтересованность в успехе каждого работника.",
+      "situation_ru": "Заинтересованность в успехе каждого работника.",
       "situation_uk": null,
       "situation_en": null,
       "situation_ge": null,
@@ -419,18 +419,18 @@
       "business_value_en": null,
       "business_value_ge": null,
       "category": "competence",
-      "order": 33,
+      "order": 17,
       "is_active": true,
-      "created_at": "2025-08-21T13:36:08.356Z",
-      "updated_at": "2025-08-21T13:36:08.356Z"
+      "created_at": "2026-03-19T15:33:36.392Z",
+      "updated_at": "2026-03-19T15:33:36.392Z"
     }
   },
   {
     "model": "core.businessvalue",
-    "pk": 35,
+    "pk": 85,
     "fields": {
-      "situation": "Здороваемся\n\t\t\t\t\tс клиентами всегда первыми.",
-      "situation_ru": "Здороваемся\n\t\t\t\t\tс клиентами всегда первыми.",
+      "situation": "Здороваемся с клиентами всегда первыми.",
+      "situation_ru": "Здороваемся с клиентами всегда первыми.",
       "situation_uk": null,
       "situation_en": null,
       "situation_ge": null,
@@ -440,102 +440,102 @@
       "business_value_en": null,
       "business_value_ge": null,
       "category": "leadership",
-      "order": 2,
+      "order": 0,
       "is_active": true,
-      "created_at": "2025-08-21T13:36:08.220Z",
-      "updated_at": "2025-08-21T13:36:08.220Z"
+      "created_at": "2026-03-19T15:33:36.407Z",
+      "updated_at": "2026-03-19T15:33:36.407Z"
     }
   },
   {
     "model": "core.businessvalue",
-    "pk": 37,
+    "pk": 86,
     "fields": {
-      "situation": "Саморазвитие\n\t\t\t\t\tсотрудника.",
-      "situation_ru": "Саморазвитие\n\t\t\t\t\tсотрудника.",
+      "situation": "Саморазвитие сотрудника.",
+      "situation_ru": "Саморазвитие сотрудника.",
       "situation_uk": null,
       "situation_en": null,
       "situation_ge": null,
       "business_value": "лидерство",
       "business_value_ru": "лидерство",
+      "business_value_uk": null,
+      "business_value_en": null,
+      "business_value_ge": null,
+      "category": "leadership",
+      "order": 1,
+      "is_active": true,
+      "created_at": "2026-03-19T15:33:36.458Z",
+      "updated_at": "2026-03-19T15:33:36.458Z"
+    }
+  },
+  {
+    "model": "core.businessvalue",
+    "pk": 87,
+    "fields": {
+      "situation": "Ответственность за выполнения плана магазина.",
+      "situation_ru": "Ответственность за выполнения плана магазина.",
+      "situation_uk": null,
+      "situation_en": null,
+      "situation_ge": null,
+      "business_value": "команда, лидерство",
+      "business_value_ru": "команда, лидерство",
+      "business_value_uk": null,
+      "business_value_en": null,
+      "business_value_ge": null,
+      "category": "leadership",
+      "order": 2,
+      "is_active": true,
+      "created_at": "2026-03-19T15:33:36.503Z",
+      "updated_at": "2026-03-19T15:33:36.504Z"
+    }
+  },
+  {
+    "model": "core.businessvalue",
+    "pk": 88,
+    "fields": {
+      "situation": "Соблюдение стандартов Сервиса Высокого Уровня в работе с клиентом.",
+      "situation_ru": "Соблюдение стандартов Сервиса Высокого Уровня в работе с клиентом.",
+      "situation_uk": null,
+      "situation_en": null,
+      "situation_ge": null,
+      "business_value": "уникальность, лидерство",
+      "business_value_ru": "уникальность, лидерство",
+      "business_value_uk": null,
+      "business_value_en": null,
+      "business_value_ge": null,
+      "category": "leadership",
+      "order": 3,
+      "is_active": true,
+      "created_at": "2026-03-19T15:33:36.531Z",
+      "updated_at": "2026-03-19T15:33:36.531Z"
+    }
+  },
+  {
+    "model": "core.businessvalue",
+    "pk": 89,
+    "fields": {
+      "situation": "Заинтересованность в развитии клиента.",
+      "situation_ru": "Заинтересованность в развитии клиента.",
+      "situation_uk": null,
+      "situation_en": null,
+      "situation_ge": null,
+      "business_value": "эспрессо культура, лидерство",
+      "business_value_ru": "эспрессо культура, лидерство",
       "business_value_uk": null,
       "business_value_en": null,
       "business_value_ge": null,
       "category": "leadership",
       "order": 4,
       "is_active": true,
-      "created_at": "2025-08-21T13:36:08.227Z",
-      "updated_at": "2025-08-21T13:36:08.227Z"
+      "created_at": "2026-03-19T15:33:36.560Z",
+      "updated_at": "2026-03-19T15:33:36.560Z"
     }
   },
   {
     "model": "core.businessvalue",
-    "pk": 41,
+    "pk": 90,
     "fields": {
-      "situation": "Ответственность\n\t\t\t\t\tза выполнения плана магазина.",
-      "situation_ru": "Ответственность\n\t\t\t\t\tза выполнения плана магазина.",
-      "situation_uk": null,
-      "situation_en": null,
-      "situation_ge": null,
-      "business_value": "команда,\n\t\t\t\tлидерство",
-      "business_value_ru": "команда,\n\t\t\t\tлидерство",
-      "business_value_uk": null,
-      "business_value_en": null,
-      "business_value_ge": null,
-      "category": "leadership",
-      "order": 8,
-      "is_active": true,
-      "created_at": "2025-08-21T13:36:08.248Z",
-      "updated_at": "2025-08-21T13:36:08.248Z"
-    }
-  },
-  {
-    "model": "core.businessvalue",
-    "pk": 47,
-    "fields": {
-      "situation": "Соблюдение\n\t\t\t\t\tстандартов Сервиса Высокого Уровня\n\t\t\t\t\tв работе с клиентом.",
-      "situation_ru": "Соблюдение\n\t\t\t\t\tстандартов Сервиса Высокого Уровня\n\t\t\t\t\tв работе с клиентом.",
-      "situation_uk": null,
-      "situation_en": null,
-      "situation_ge": null,
-      "business_value": "уникальность,\n\t\t\t\tлидерство",
-      "business_value_ru": "уникальность,\n\t\t\t\tлидерство",
-      "business_value_uk": null,
-      "business_value_en": null,
-      "business_value_ge": null,
-      "category": "leadership",
-      "order": 14,
-      "is_active": true,
-      "created_at": "2025-08-21T13:36:08.274Z",
-      "updated_at": "2025-08-21T13:36:08.274Z"
-    }
-  },
-  {
-    "model": "core.businessvalue",
-    "pk": 51,
-    "fields": {
-      "situation": "Заинтересованность\n\t\t\t\t\tв развитии клиента.",
-      "situation_ru": "Заинтересованность\n\t\t\t\t\tв развитии клиента.",
-      "situation_uk": null,
-      "situation_en": null,
-      "situation_ge": null,
-      "business_value": "эспрессо\n\t\t\t\tкультура, лидерство",
-      "business_value_ru": "эспрессо\n\t\t\t\tкультура, лидерство",
-      "business_value_uk": null,
-      "business_value_en": null,
-      "business_value_ge": null,
-      "category": "leadership",
-      "order": 18,
-      "is_active": true,
-      "created_at": "2025-08-21T13:36:08.290Z",
-      "updated_at": "2025-08-21T13:36:08.290Z"
-    }
-  },
-  {
-    "model": "core.businessvalue",
-    "pk": 53,
-    "fields": {
-      "situation": "Заинтересованность\n\t\t\t\t\tв дружном и лояльном друг к другу\n\t\t\t\t\tколлективе.",
-      "situation_ru": "Заинтересованность\n\t\t\t\t\tв дружном и лояльном друг к другу\n\t\t\t\t\tколлективе.",
+      "situation": "Заинтересованность в дружном и лояльном друг к другу коллективе.",
+      "situation_ru": "Заинтересованность в дружном и лояльном друг к другу коллективе.",
       "situation_uk": null,
       "situation_en": null,
       "situation_ge": null,
@@ -545,18 +545,18 @@
       "business_value_en": null,
       "business_value_ge": null,
       "category": "leadership",
-      "order": 20,
+      "order": 5,
       "is_active": true,
-      "created_at": "2025-08-21T13:36:08.298Z",
-      "updated_at": "2025-08-21T13:36:08.298Z"
+      "created_at": "2026-03-19T15:33:36.578Z",
+      "updated_at": "2026-03-19T15:33:36.578Z"
     }
   },
   {
     "model": "core.businessvalue",
-    "pk": 57,
+    "pk": 91,
     "fields": {
-      "situation": "Соблюдение\n\t\t\t\t\tчистоты в магазине и подсобных\n\t\t\t\t\tпомещениях.",
-      "situation_ru": "Соблюдение\n\t\t\t\t\tчистоты в магазине и подсобных\n\t\t\t\t\tпомещениях.",
+      "situation": "Соблюдение чистоты в магазине и подсобных помещениях.",
+      "situation_ru": "Соблюдение чистоты в магазине и подсобных помещениях.",
       "situation_uk": null,
       "situation_en": null,
       "situation_ge": null,
@@ -566,144 +566,123 @@
       "business_value_en": null,
       "business_value_ge": null,
       "category": "leadership",
-      "order": 24,
+      "order": 6,
       "is_active": true,
-      "created_at": "2025-08-21T13:36:08.315Z",
-      "updated_at": "2025-08-21T13:36:08.315Z"
+      "created_at": "2026-03-19T15:33:36.601Z",
+      "updated_at": "2026-03-19T15:33:36.601Z"
     }
   },
   {
     "model": "core.businessvalue",
-    "pk": 63,
+    "pk": 92,
     "fields": {
-      "situation": "Следование\n\t\t\t\t\tличной ответственности в команде.",
-      "situation_ru": "Следование\n\t\t\t\t\tличной ответственности в команде.",
+      "situation": "Следование личной ответственности в команде.",
+      "situation_ru": "Следование личной ответственности в команде.",
       "situation_uk": null,
       "situation_en": null,
       "situation_ge": null,
-      "business_value": "команда,\n\t\t\t\tлидерство",
-      "business_value_ru": "команда,\n\t\t\t\tлидерство",
+      "business_value": "команда, лидерство",
+      "business_value_ru": "команда, лидерство",
       "business_value_uk": null,
       "business_value_en": null,
       "business_value_ge": null,
       "category": "leadership",
-      "order": 30,
-      "is_active": true,
-      "created_at": "2025-08-21T13:36:08.342Z",
-      "updated_at": "2025-08-21T13:36:08.342Z"
-    }
-  },
-  {
-    "model": "core.businessvalue",
-    "pk": 42,
-    "fields": {
-      "situation": "Участие\n\t\t\t\t\tв развитии новых сотрудников.",
-      "situation_ru": "Участие\n\t\t\t\t\tв развитии новых сотрудников.",
-      "situation_uk": null,
-      "situation_en": null,
-      "situation_ge": null,
-      "business_value": "команда",
-      "business_value_ru": "команда",
-      "business_value_uk": null,
-      "business_value_en": null,
-      "business_value_ge": null,
-      "category": "team",
-      "order": 9,
-      "is_active": true,
-      "created_at": "2025-08-21T13:36:08.253Z",
-      "updated_at": "2025-08-21T13:36:08.253Z"
-    }
-  },
-  {
-    "model": "core.businessvalue",
-    "pk": 44,
-    "fields": {
-      "situation": "Соблюдение\n\t\t\t\t\tстандартов общение внутри команды.",
-      "situation_ru": "Соблюдение\n\t\t\t\t\tстандартов общение внутри команды.",
-      "situation_uk": null,
-      "situation_en": null,
-      "situation_ge": null,
-      "business_value": "команда",
-      "business_value_ru": "команда",
-      "business_value_uk": null,
-      "business_value_en": null,
-      "business_value_ge": null,
-      "category": "team",
-      "order": 11,
-      "is_active": true,
-      "created_at": "2025-08-21T13:36:08.260Z",
-      "updated_at": "2025-08-21T13:36:08.260Z"
-    }
-  },
-  {
-    "model": "core.businessvalue",
-    "pk": 58,
-    "fields": {
-      "situation": "Соблюдение\n\t\t\t\t\tправила распределение ролей «хозяйка\n\t\t\t\t\tзала», «бариста».",
-      "situation_ru": "Соблюдение\n\t\t\t\t\tправила распределение ролей «хозяйка\n\t\t\t\t\tзала», «бариста».",
-      "situation_uk": null,
-      "situation_en": null,
-      "situation_ge": null,
-      "business_value": "команда",
-      "business_value_ru": "команда",
-      "business_value_uk": null,
-      "business_value_en": null,
-      "business_value_ge": null,
-      "category": "team",
-      "order": 25,
-      "is_active": true,
-      "created_at": "2025-08-21T13:36:08.320Z",
-      "updated_at": "2025-08-21T13:36:08.320Z"
-    }
-  },
-  {
-    "model": "core.businessvalue",
-    "pk": 62,
-    "fields": {
-      "situation": "Пунктуальность\n\t\t\t\t\tсотрудника.",
-      "situation_ru": "Пунктуальность\n\t\t\t\t\tсотрудника.",
-      "situation_uk": null,
-      "situation_en": null,
-      "situation_ge": null,
-      "business_value": "команда",
-      "business_value_ru": "команда",
-      "business_value_uk": null,
-      "business_value_en": null,
-      "business_value_ge": null,
-      "category": "team",
-      "order": 29,
-      "is_active": true,
-      "created_at": "2025-08-21T13:36:08.337Z",
-      "updated_at": "2025-08-21T13:36:08.337Z"
-    }
-  },
-  {
-    "model": "core.businessvalue",
-    "pk": 40,
-    "fields": {
-      "situation": "Компания\n\t\t\t\t\tпредлагает продукты premium класса.",
-      "situation_ru": "Компания\n\t\t\t\t\tпредлагает продукты premium класса.",
-      "situation_uk": null,
-      "situation_en": null,
-      "situation_ge": null,
-      "business_value": "уникальность",
-      "business_value_ru": "уникальность",
-      "business_value_uk": null,
-      "business_value_en": null,
-      "business_value_ge": null,
-      "category": "uniqueness",
       "order": 7,
       "is_active": true,
-      "created_at": "2025-08-21T13:36:08.243Z",
-      "updated_at": "2025-08-21T13:36:08.243Z"
+      "created_at": "2026-03-19T15:33:36.633Z",
+      "updated_at": "2026-03-19T15:33:36.633Z"
     }
   },
   {
     "model": "core.businessvalue",
-    "pk": 46,
+    "pk": 93,
     "fields": {
-      "situation": "Соблюдение\n\t\t\t\t\tстандартов дегустационного зала.",
-      "situation_ru": "Соблюдение\n\t\t\t\t\tстандартов дегустационного зала.",
+      "situation": "Участие в развитии новых сотрудников.",
+      "situation_ru": "Участие в развитии новых сотрудников.",
+      "situation_uk": null,
+      "situation_en": null,
+      "situation_ge": null,
+      "business_value": "команда",
+      "business_value_ru": "команда",
+      "business_value_uk": null,
+      "business_value_en": null,
+      "business_value_ge": null,
+      "category": "team",
+      "order": 0,
+      "is_active": true,
+      "created_at": "2026-03-19T15:33:36.664Z",
+      "updated_at": "2026-03-19T15:33:36.664Z"
+    }
+  },
+  {
+    "model": "core.businessvalue",
+    "pk": 94,
+    "fields": {
+      "situation": "Соблюдение стандартов общение внутри команды.",
+      "situation_ru": "Соблюдение стандартов общение внутри команды.",
+      "situation_uk": null,
+      "situation_en": null,
+      "situation_ge": null,
+      "business_value": "команда",
+      "business_value_ru": "команда",
+      "business_value_uk": null,
+      "business_value_en": null,
+      "business_value_ge": null,
+      "category": "team",
+      "order": 1,
+      "is_active": true,
+      "created_at": "2026-03-19T15:33:36.693Z",
+      "updated_at": "2026-03-19T15:33:36.694Z"
+    }
+  },
+  {
+    "model": "core.businessvalue",
+    "pk": 95,
+    "fields": {
+      "situation": "Соблюдение правила распределение ролей «хозяйка зала», «бариста».",
+      "situation_ru": "Соблюдение правила распределение ролей «хозяйка зала», «бариста».",
+      "situation_uk": null,
+      "situation_en": null,
+      "situation_ge": null,
+      "business_value": "команда",
+      "business_value_ru": "команда",
+      "business_value_uk": null,
+      "business_value_en": null,
+      "business_value_ge": null,
+      "category": "team",
+      "order": 2,
+      "is_active": true,
+      "created_at": "2026-03-19T15:33:36.715Z",
+      "updated_at": "2026-03-19T15:33:36.715Z"
+    }
+  },
+  {
+    "model": "core.businessvalue",
+    "pk": 96,
+    "fields": {
+      "situation": "Пунктуальность сотрудника.",
+      "situation_ru": "Пунктуальность сотрудника.",
+      "situation_uk": null,
+      "situation_en": null,
+      "situation_ge": null,
+      "business_value": "команда",
+      "business_value_ru": "команда",
+      "business_value_uk": null,
+      "business_value_en": null,
+      "business_value_ge": null,
+      "category": "team",
+      "order": 3,
+      "is_active": true,
+      "created_at": "2026-03-19T15:33:36.738Z",
+      "updated_at": "2026-03-19T15:33:36.738Z"
+    }
+  },
+  {
+    "model": "core.businessvalue",
+    "pk": 97,
+    "fields": {
+      "situation": "Компания предлагает продукты premium класса.",
+      "situation_ru": "Компания предлагает продукты premium класса.",
       "situation_uk": null,
       "situation_en": null,
       "situation_ge": null,
@@ -713,18 +692,18 @@
       "business_value_en": null,
       "business_value_ge": null,
       "category": "uniqueness",
-      "order": 13,
+      "order": 0,
       "is_active": true,
-      "created_at": "2025-08-21T13:36:08.270Z",
-      "updated_at": "2025-08-21T13:36:08.270Z"
+      "created_at": "2026-03-19T15:33:36.763Z",
+      "updated_at": "2026-03-19T15:33:36.763Z"
     }
   },
   {
     "model": "core.businessvalue",
-    "pk": 50,
+    "pk": 98,
     "fields": {
-      "situation": "Музыка\n\t\t\t\t\tв формате торговой марки.",
-      "situation_ru": "Музыка\n\t\t\t\t\tв формате торговой марки.",
+      "situation": "Соблюдение стандартов дегустационного зала.",
+      "situation_ru": "Соблюдение стандартов дегустационного зала.",
       "situation_uk": null,
       "situation_en": null,
       "situation_ge": null,
@@ -734,23 +713,44 @@
       "business_value_en": null,
       "business_value_ge": null,
       "category": "uniqueness",
-      "order": 17,
+      "order": 1,
       "is_active": true,
-      "created_at": "2025-08-21T13:36:08.286Z",
-      "updated_at": "2025-08-21T13:36:08.286Z"
+      "created_at": "2026-03-19T15:33:36.798Z",
+      "updated_at": "2026-03-19T15:33:36.798Z"
+    }
+  },
+  {
+    "model": "core.businessvalue",
+    "pk": 99,
+    "fields": {
+      "situation": "Музыка в формате торговой марки.",
+      "situation_ru": "Музыка в формате торговой марки.",
+      "situation_uk": null,
+      "situation_en": null,
+      "situation_ge": null,
+      "business_value": "уникальность",
+      "business_value_ru": "уникальность",
+      "business_value_uk": null,
+      "business_value_en": null,
+      "business_value_ge": null,
+      "category": "uniqueness",
+      "order": 2,
+      "is_active": true,
+      "created_at": "2026-03-19T15:33:36.835Z",
+      "updated_at": "2026-03-19T15:33:36.835Z"
     }
   },
   {
     "model": "core.trainingprogram",
-    "pk": 19,
+    "pk": 27,
     "fields": {
       "title": "1 день",
       "title_ru": "1 день",
       "title_uk": null,
       "title_en": null,
       "title_ge": null,
-      "content": "<h3>1.Знакомство: • встреча новичка и знакомство его со всей командой • экскурсия по магазину. • готовим зал к работе и рассказываем что нужно сделать до открытия • распределяем задачи на день для каждого сотрудника, а также ставим задачу перед новичком - узнать максимум информации и быть полезным команде • проводим утреннюю дегустацию, включая новичка в процесс и спрашиваем его ощущения ( объясняем для чего нам даются три чашечки эспрессо в течении дня).2. Что такое Дом Кофе: • история возникновения • торговая марка • генеральный импортер кофе Blaser • сеть розничных магазинов с дегустационным залом, с сервисным центром и дилерская сеть. • команда из сотрудников, дилеров, поставщиков • ассортимент ДК (виды товаров и услуг, представленные бренды) • поддержка и сопровождение клиента на всех этапах (при продаже и после нее) • где можно купить кофе Blaser • воспитание культуры эспрессопития (наша миссия) • множество возможностей для сотрудников (карьерный рост, участие в различных программах и конкурсах) • Единые стандарты работы диллерской сети3. Основные задачи и правила поведения менеджера в зале. Этика общения с клиентами и сотрудниками. Соблюдение чистоты в зале и за стойкой. Предупреждаем, что за несоблюдение этих правил будут применяться дисциплинарные взыскания.4. Что такое эспрессо • краткая история • особенности приготовления • полезные свойства.5. Изучение кофейной карты. Критерии качества напитков.6. Вводная информация о кофейной линейке • моносорта и букеты (ориентация по цвету пачки) • краткая информация об арабике и робусте. • кто такой бариста.7.Принимает максимально активное участие в уборке в конце дня8.Обратная связь. Вопросы о первом пробном дне.</h3>",
-      "content_ru": "<h3>1.Знакомство: • встреча новичка и знакомство его со всей командой • экскурсия по магазину. • готовим зал к работе и рассказываем что нужно сделать до открытия • распределяем задачи на день для каждого сотрудника, а также ставим задачу перед новичком - узнать максимум информации и быть полезным команде • проводим утреннюю дегустацию, включая новичка в процесс и спрашиваем его ощущения ( объясняем для чего нам даются три чашечки эспрессо в течении дня).2. Что такое Дом Кофе: • история возникновения • торговая марка • генеральный импортер кофе Blaser • сеть розничных магазинов с дегустационным залом, с сервисным центром и дилерская сеть. • команда из сотрудников, дилеров, поставщиков • ассортимент ДК (виды товаров и услуг, представленные бренды) • поддержка и сопровождение клиента на всех этапах (при продаже и после нее) • где можно купить кофе Blaser • воспитание культуры эспрессопития (наша миссия) • множество возможностей для сотрудников (карьерный рост, участие в различных программах и конкурсах) • Единые стандарты работы диллерской сети3. Основные задачи и правила поведения менеджера в зале. Этика общения с клиентами и сотрудниками. Соблюдение чистоты в зале и за стойкой. Предупреждаем, что за несоблюдение этих правил будут применяться дисциплинарные взыскания.4. Что такое эспрессо • краткая история • особенности приготовления • полезные свойства.5. Изучение кофейной карты. Критерии качества напитков.6. Вводная информация о кофейной линейке • моносорта и букеты (ориентация по цвету пачки) • краткая информация об арабике и робусте. • кто такой бариста.7.Принимает максимально активное участие в уборке в конце дня8.Обратная связь. Вопросы о первом пробном дне.</h3>",
+      "content": "<p>• Знакомство:\n • встреча новичка и знакомство его со всей командой\n • экскурсия по магазину.\n • готовим зал к работе и рассказываем что нужно сделать до открытия\n • распределяем задачи на день для каждого сотрудника, а также ставим задачу перед новичком - узнать максимум информации и быть полезным команде\n • проводим утреннюю дегустацию, включая новичка в процесс и спрашиваем его ощущения ( объясняем для чего нам даются три чашечки эспрессо в течении дня).\n • Что такое Дом Кофе:\n • история возникновения\n • торговая марка\n • генеральный импортер кофе Blaser\n • сеть розничных магазинов с дегустационным залом, с сервисным центром и дилерская сеть.\n • команда из сотрудников, дилеров, поставщиков\n • ассортимент ДК (виды товаров и услуг, представленные бренды)\n • поддержка и сопровождение клиента на всех этапах (при продаже и после нее)\n • где можно купить кофе Blaser\n • воспитание культуры эспрессопития (наша миссия)\n • множество возможностей для сотрудников (карьерный рост, участие в различных программах и конкурсах)\n • Единые стандарты работы диллерской сети Основные задачи и правила поведения менеджера в зале. Этика общения с клиентами и сотрудниками. Соблюдение чистоты в зале и за стойкой. Предупреждаем, что за несоблюдение этих правил будут применяться дисциплинарные взыскания.\n • Что такое эспрессо\n • краткая история\n • особенности приготовления\n • полезные свойства. Изучение кофейной карты. Критерии качества напитков.\n • Вводная информация о кофейной линейке\n • моносорта и букеты (ориентация по цвету пачки)\n • краткая информация об арабике и робусте.\n • кто такой бариста. Принимает максимально активное участие в уборке в конце дня Обратная связь. Вопросы о первом пробном дне.</p>",
+      "content_ru": "<p>• Знакомство:\n • встреча новичка и знакомство его со всей командой\n • экскурсия по магазину.\n • готовим зал к работе и рассказываем что нужно сделать до открытия\n • распределяем задачи на день для каждого сотрудника, а также ставим задачу перед новичком - узнать максимум информации и быть полезным команде\n • проводим утреннюю дегустацию, включая новичка в процесс и спрашиваем его ощущения ( объясняем для чего нам даются три чашечки эспрессо в течении дня).\n • Что такое Дом Кофе:\n • история возникновения\n • торговая марка\n • генеральный импортер кофе Blaser\n • сеть розничных магазинов с дегустационным залом, с сервисным центром и дилерская сеть.\n • команда из сотрудников, дилеров, поставщиков\n • ассортимент ДК (виды товаров и услуг, представленные бренды)\n • поддержка и сопровождение клиента на всех этапах (при продаже и после нее)\n • где можно купить кофе Blaser\n • воспитание культуры эспрессопития (наша миссия)\n • множество возможностей для сотрудников (карьерный рост, участие в различных программах и конкурсах)\n • Единые стандарты работы диллерской сети Основные задачи и правила поведения менеджера в зале. Этика общения с клиентами и сотрудниками. Соблюдение чистоты в зале и за стойкой. Предупреждаем, что за несоблюдение этих правил будут применяться дисциплинарные взыскания.\n • Что такое эспрессо\n • краткая история\n • особенности приготовления\n • полезные свойства. Изучение кофейной карты. Критерии качества напитков.\n • Вводная информация о кофейной линейке\n • моносорта и букеты (ориентация по цвету пачки)\n • краткая информация об арабике и робусте.\n • кто такой бариста. Принимает максимально активное участие в уборке в конце дня Обратная связь. Вопросы о первом пробном дне.</p>",
       "content_uk": null,
       "content_en": null,
       "content_ge": null,
@@ -758,21 +758,21 @@
       "period_number": 1,
       "order": 1,
       "is_active": true,
-      "created_at": "2025-08-26T11:16:53.039Z",
-      "updated_at": "2025-08-26T11:16:53.039Z"
+      "created_at": "2026-03-19T15:33:36.881Z",
+      "updated_at": "2026-03-19T15:33:36.881Z"
     }
   },
   {
     "model": "core.trainingprogram",
-    "pk": 20,
+    "pk": 28,
     "fields": {
       "title": "2 день",
       "title_ru": "2 день",
       "title_uk": null,
       "title_en": null,
       "title_ge": null,
-      "content": "<h3>1. Повторение информации первого дня.2. Информация о зеленом кофе (часть 1): • история • произрастание и выращивание • виды кофейного дерева • сбор урожая.3. Изучение кофейной линейки: • бренды (Blaser,Gaggia) • классы зеленного кофе ( рассказать какие представлены в нашей линейке) • виды обжарки и как они влияют на вкус.4. Сервировка и посуда для кофейных напитков. Приготовление кофе себе5.Участвует в уборке в конце дня.6. Обратная связь ( с менеджером по персоналу).</h3>",
-      "content_ru": "<h3>1. Повторение информации первого дня.2. Информация о зеленом кофе (часть 1): • история • произрастание и выращивание • виды кофейного дерева • сбор урожая.3. Изучение кофейной линейки: • бренды (Blaser,Gaggia) • классы зеленного кофе ( рассказать какие представлены в нашей линейке) • виды обжарки и как они влияют на вкус.4. Сервировка и посуда для кофейных напитков. Приготовление кофе себе5.Участвует в уборке в конце дня.6. Обратная связь ( с менеджером по персоналу).</h3>",
+      "content": "<p>Повторение информации первого дня.\n • Информация о зеленом кофе (часть 1):\n • история\n • произрастание и выращивание\n • виды кофейного дерева\n • сбор урожая.\n • Изучение кофейной линейки:\n • бренды (Blaser,Gaggia)\n • классы зеленного кофе ( рассказать какие представлены в нашей линейке)\n • виды обжарки и как они влияют на вкус. Сервировка и посуда для кофейных напитков. Приготовление кофе себе Участвует в уборке в конце дня. Обратная связь ( с менеджером по персоналу).</p>",
+      "content_ru": "<p>Повторение информации первого дня.\n • Информация о зеленом кофе (часть 1):\n • история\n • произрастание и выращивание\n • виды кофейного дерева\n • сбор урожая.\n • Изучение кофейной линейки:\n • бренды (Blaser,Gaggia)\n • классы зеленного кофе ( рассказать какие представлены в нашей линейке)\n • виды обжарки и как они влияют на вкус. Сервировка и посуда для кофейных напитков. Приготовление кофе себе Участвует в уборке в конце дня. Обратная связь ( с менеджером по персоналу).</p>",
       "content_uk": null,
       "content_en": null,
       "content_ge": null,
@@ -780,21 +780,21 @@
       "period_number": 2,
       "order": 2,
       "is_active": true,
-      "created_at": "2025-08-26T11:16:53.045Z",
-      "updated_at": "2025-08-26T11:16:53.045Z"
+      "created_at": "2026-03-19T15:33:36.915Z",
+      "updated_at": "2026-03-19T15:33:36.915Z"
     }
   },
   {
     "model": "core.trainingprogram",
-    "pk": 21,
+    "pk": 29,
     "fields": {
       "title": "3 день",
       "title_ru": "3 день",
       "title_uk": null,
       "title_en": null,
       "title_ge": null,
-      "content": "<h3>1. Повтор информации 1-го и 2-го дня.2. Информация о кофе (часть 2): • обработка • способы обжарки • расфасовка и хранение зеленого кофе • химический состав и изменение его при обжарке • растворимый кофе • • упаковка и хранение обжаренного кофе.3. Работа за стойкой: • помол и способы приготовления • постепенное вовлечение в процесс приготовления напитков под контролем старшего менеджера • пробует консультировать клиентов.4. Помогает мыть оборудование. Участвует в уборке в конце дня.</h3>",
-      "content_ru": "<h3>1. Повтор информации 1-го и 2-го дня.2. Информация о кофе (часть 2): • обработка • способы обжарки • расфасовка и хранение зеленого кофе • химический состав и изменение его при обжарке • растворимый кофе • • упаковка и хранение обжаренного кофе.3. Работа за стойкой: • помол и способы приготовления • постепенное вовлечение в процесс приготовления напитков под контролем старшего менеджера • пробует консультировать клиентов.4. Помогает мыть оборудование. Участвует в уборке в конце дня.</h3>",
+      "content": "<p>Повтор информации 1-го и 2-го дня.\n • Информация о кофе (часть 2):\n • обработка\n • способы обжарки\n • расфасовка и хранение зеленого кофе\n • химический состав и изменение его при обжарке\n • растворимый кофе\n • упаковка и хранение обжаренного кофе.\n • Работа за стойкой:\n • помол и способы приготовления\n • постепенное вовлечение в процесс приготовления напитков под контролем старшего менеджера\n • пробует консультировать клиентов. Помогает мыть оборудование. Участвует в уборке в конце дня.</p>",
+      "content_ru": "<p>Повтор информации 1-го и 2-го дня.\n • Информация о кофе (часть 2):\n • обработка\n • способы обжарки\n • расфасовка и хранение зеленого кофе\n • химический состав и изменение его при обжарке\n • растворимый кофе\n • упаковка и хранение обжаренного кофе.\n • Работа за стойкой:\n • помол и способы приготовления\n • постепенное вовлечение в процесс приготовления напитков под контролем старшего менеджера\n • пробует консультировать клиентов. Помогает мыть оборудование. Участвует в уборке в конце дня.</p>",
       "content_uk": null,
       "content_en": null,
       "content_ge": null,
@@ -802,21 +802,21 @@
       "period_number": 3,
       "order": 3,
       "is_active": true,
-      "created_at": "2025-08-26T11:16:53.049Z",
-      "updated_at": "2025-08-26T11:16:53.049Z"
+      "created_at": "2026-03-19T15:33:36.947Z",
+      "updated_at": "2026-03-19T15:33:36.947Z"
     }
   },
   {
     "model": "core.trainingprogram",
-    "pk": 22,
+    "pk": 30,
     "fields": {
       "title": "Итоги 1 месяца",
       "title_ru": "Итоги 1 месяца",
       "title_uk": null,
       "title_en": null,
       "title_ge": null,
-      "content": "<h3>1.Самостоятельная работа за стойкой: • принимает заказы • рассчитывает клиента • работа с терминалом и отчетом • готовит • убирает.2. Уверенно владеет информацией о чае и о кофе (тест по буклетам на усмотрение директора).3. Знает систему скидок, умеет рассчитать представителей и дилеров, выписать копию чека.4. Знает структуру Компании.5. Находится в курсе всех происходящих акциях на магазине, активно инфорирует о них клиентов (пользуется электронной почтой магазина.)6. Изучает особенности отдельных сортов кофе.7. Прием товара (сверка с накладной), и правильная выкладка витрины ( кофе выставляет по срокам, следит за наличием ценников и прайсов).</h3>",
-      "content_ru": "<h3>1.Самостоятельная работа за стойкой: • принимает заказы • рассчитывает клиента • работа с терминалом и отчетом • готовит • убирает.2. Уверенно владеет информацией о чае и о кофе (тест по буклетам на усмотрение директора).3. Знает систему скидок, умеет рассчитать представителей и дилеров, выписать копию чека.4. Знает структуру Компании.5. Находится в курсе всех происходящих акциях на магазине, активно инфорирует о них клиентов (пользуется электронной почтой магазина.)6. Изучает особенности отдельных сортов кофе.7. Прием товара (сверка с накладной), и правильная выкладка витрины ( кофе выставляет по срокам, следит за наличием ценников и прайсов).</h3>",
+      "content": "<p>• Самостоятельная работа за стойкой:\n • принимает заказы\n • рассчитывает клиента\n • работа с терминалом и отчетом\n • готовит\n • убирает. Уверенно владеет информацией о чае и о кофе (тест по буклетам на усмотрение директора). Знает систему скидок, умеет рассчитать представителей и дилеров, выписать копию чека. Знает структуру Компании. Находится в курсе всех происходящих акциях на магазине, активно инфорирует о них клиентов (пользуется электронной почтой магазина.) Изучает особенности отдельных сортов кофе. Прием товара (сверка с накладной), и правильная выкладка витрины ( кофе выставляет по срокам, следит за наличием ценников и прайсов).</p>",
+      "content_ru": "<p>• Самостоятельная работа за стойкой:\n • принимает заказы\n • рассчитывает клиента\n • работа с терминалом и отчетом\n • готовит\n • убирает. Уверенно владеет информацией о чае и о кофе (тест по буклетам на усмотрение директора). Знает систему скидок, умеет рассчитать представителей и дилеров, выписать копию чека. Знает структуру Компании. Находится в курсе всех происходящих акциях на магазине, активно инфорирует о них клиентов (пользуется электронной почтой магазина.) Изучает особенности отдельных сортов кофе. Прием товара (сверка с накладной), и правильная выкладка витрины ( кофе выставляет по срокам, следит за наличием ценников и прайсов).</p>",
       "content_uk": null,
       "content_en": null,
       "content_ge": null,
@@ -824,21 +824,21 @@
       "period_number": 1,
       "order": 1,
       "is_active": true,
-      "created_at": "2025-08-26T11:16:53.054Z",
-      "updated_at": "2025-08-26T11:16:53.054Z"
+      "created_at": "2026-03-19T15:33:36.960Z",
+      "updated_at": "2026-03-19T15:33:36.960Z"
     }
   },
   {
     "model": "core.trainingprogram",
-    "pk": 23,
+    "pk": 31,
     "fields": {
       "title": "Итоги 2 месяца",
       "title_ru": "Итоги 2 месяца",
       "title_uk": null,
       "title_en": null,
       "title_ge": null,
-      "content": "<h3>1. Знание истории и особенностей каждого бренда.2. Изучение оборудования: • классификация кофейного оборудования • основные узлы • типы ножей в кофемолках • рабочий блок • типы бойлеров • материалы: АБС пластик и поликарбонат • способы управления кофемашиной • каппучинатор и его виды • система SBS • быстрый пар • уход, чистка от накипи и кофейного жира • фильтры для воды.3. Профессиональное оборудование: • виды ручных и полных автоматов • рабочая группа • барометр • температура приготовления • сифонная система • уход.4. Кофемолки: • виды • типы жерновов • диаметр ножей • материал ножей • защита от перегрева и посторонних предметов • настройка профессиональной кофемолки.5. Правила запуска кофейного оборудования. Ежедневный запуск минимум 1 кофеварки .6. Программа обучения клиента при приобретении кофеварки..7. Правильное оформление документов при отгрузке товаров.8. Консультации по кофейному оборудованию.9. Участвует в распределении обязанностей в команде на месяц.10. Умеет считать отчет.</h3>",
-      "content_ru": "<h3>1. Знание истории и особенностей каждого бренда.2. Изучение оборудования: • классификация кофейного оборудования • основные узлы • типы ножей в кофемолках • рабочий блок • типы бойлеров • материалы: АБС пластик и поликарбонат • способы управления кофемашиной • каппучинатор и его виды • система SBS • быстрый пар • уход, чистка от накипи и кофейного жира • фильтры для воды.3. Профессиональное оборудование: • виды ручных и полных автоматов • рабочая группа • барометр • температура приготовления • сифонная система • уход.4. Кофемолки: • виды • типы жерновов • диаметр ножей • материал ножей • защита от перегрева и посторонних предметов • настройка профессиональной кофемолки.5. Правила запуска кофейного оборудования. Ежедневный запуск минимум 1 кофеварки .6. Программа обучения клиента при приобретении кофеварки..7. Правильное оформление документов при отгрузке товаров.8. Консультации по кофейному оборудованию.9. Участвует в распределении обязанностей в команде на месяц.10. Умеет считать отчет.</h3>",
+      "content": "<p>Знание истории и особенностей каждого бренда.\n • Изучение оборудования:\n • классификация кофейного оборудования\n • основные узлы\n • типы ножей в кофемолках\n • рабочий блок\n • типы бойлеров\n • материалы: АБС пластик и поликарбонат\n • способы управления кофемашиной\n • каппучинатор и его виды\n • система SBS\n • быстрый пар\n • уход, чистка от накипи и кофейного жира\n • фильтры для воды.\n • Профессиональное оборудование:\n • виды ручных и полных автоматов\n • рабочая группа\n • барометр\n • температура приготовления\n • сифонная система\n • уход.\n • Кофемолки:\n • виды\n • типы жерновов\n • диаметр ножей\n • материал ножей\n • защита от перегрева и посторонних предметов\n • настройка профессиональной кофемолки. Правила запуска кофейного оборудования. Ежедневный запуск минимум 1 кофеварки . Программа обучения клиента при приобретении кофеварки.. Правильное оформление документов при отгрузке товаров. Консультации по кофейному оборудованию. Участвует в распределении обязанностей в команде на месяц. Умеет считать отчет.</p>",
+      "content_ru": "<p>Знание истории и особенностей каждого бренда.\n • Изучение оборудования:\n • классификация кофейного оборудования\n • основные узлы\n • типы ножей в кофемолках\n • рабочий блок\n • типы бойлеров\n • материалы: АБС пластик и поликарбонат\n • способы управления кофемашиной\n • каппучинатор и его виды\n • система SBS\n • быстрый пар\n • уход, чистка от накипи и кофейного жира\n • фильтры для воды.\n • Профессиональное оборудование:\n • виды ручных и полных автоматов\n • рабочая группа\n • барометр\n • температура приготовления\n • сифонная система\n • уход.\n • Кофемолки:\n • виды\n • типы жерновов\n • диаметр ножей\n • материал ножей\n • защита от перегрева и посторонних предметов\n • настройка профессиональной кофемолки. Правила запуска кофейного оборудования. Ежедневный запуск минимум 1 кофеварки . Программа обучения клиента при приобретении кофеварки.. Правильное оформление документов при отгрузке товаров. Консультации по кофейному оборудованию. Участвует в распределении обязанностей в команде на месяц. Умеет считать отчет.</p>",
       "content_uk": null,
       "content_en": null,
       "content_ge": null,
@@ -846,21 +846,21 @@
       "period_number": 2,
       "order": 2,
       "is_active": true,
-      "created_at": "2025-08-26T11:16:53.058Z",
-      "updated_at": "2025-08-26T11:16:53.058Z"
+      "created_at": "2026-03-19T15:33:36.975Z",
+      "updated_at": "2026-03-19T15:33:36.975Z"
     }
   },
   {
     "model": "core.trainingprogram",
-    "pk": 25,
+    "pk": 32,
     "fields": {
       "title": "Итоги 3 месяца",
       "title_ru": "Итоги 3 месяца",
       "title_uk": null,
       "title_en": null,
       "title_ge": null,
-      "content": "<p>1 .Активная продажа кофе и кофейного оборудования.2. Уверенная работа с документацией:копия чека безналичный расчет (счет-фактура, расходная и налоговая накладная) доверенность уголок покупателя закон прав потребителя сертификат соответствия сервис-рапорт акт выполненных работ расчет окупаемости.3. Знание основ дегустации кофе: виды, правила, распределение по вкусовым рецепторам, вкусовые характеристики.4. Знание правил ведения инвентаризации.5. Обучение и наставничество в рамках своей компетенции.6. Активная работа с клиентом (умение слушать и слышать, умение сделать правильное предложение, привитие культуры эспрессопития).7. Активное саморазвитие.8. Аттестация и присвоение категории (присутствуют все директора и менеджер по персоналу).</p>",
-      "content_ru": "<p>1 .Активная продажа кофе и кофейного оборудования.2. Уверенная работа с документацией:копия чека безналичный расчет (счет-фактура, расходная и налоговая накладная) доверенность уголок покупателя закон прав потребителя сертификат соответствия сервис-рапорт акт выполненных работ расчет окупаемости.3. Знание основ дегустации кофе: виды, правила, распределение по вкусовым рецепторам, вкусовые характеристики.4. Знание правил ведения инвентаризации.5. Обучение и наставничество в рамках своей компетенции.6. Активная работа с клиентом (умение слушать и слышать, умение сделать правильное предложение, привитие культуры эспрессопития).7. Активное саморазвитие.8. Аттестация и присвоение категории (присутствуют все директора и менеджер по персоналу).</p>",
+      "content": "<p>1 .Активная продажа кофе и кофейного оборудования. Уверенная работа с документацией:копия чека безналичный расчет (счет-фактура, расходная и налоговая накладная) доверенность уголок покупателя закон прав потребителя сертификат соответствия сервис-рапорт акт выполненных работ расчет окупаемости. Знание основ дегустации кофе: виды, правила, распределение по вкусовым рецепторам, вкусовые характеристики. Знание правил ведения инвентаризации. Обучение и наставничество в рамках своей компетенции. Активная работа с клиентом (умение слушать и слышать, умение сделать правильное предложение, привитие культуры эспрессопития). Активное саморазвитие. Аттестация и присвоение категории (присутствуют все директора и менеджер по персоналу).</p>",
+      "content_ru": "<p>1 .Активная продажа кофе и кофейного оборудования. Уверенная работа с документацией:копия чека безналичный расчет (счет-фактура, расходная и налоговая накладная) доверенность уголок покупателя закон прав потребителя сертификат соответствия сервис-рапорт акт выполненных работ расчет окупаемости. Знание основ дегустации кофе: виды, правила, распределение по вкусовым рецепторам, вкусовые характеристики. Знание правил ведения инвентаризации. Обучение и наставничество в рамках своей компетенции. Активная работа с клиентом (умение слушать и слышать, умение сделать правильное предложение, привитие культуры эспрессопития). Активное саморазвитие. Аттестация и присвоение категории (присутствуют все директора и менеджер по персоналу).</p>",
       "content_uk": null,
       "content_en": null,
       "content_ge": null,
@@ -868,21 +868,21 @@
       "period_number": 3,
       "order": 3,
       "is_active": true,
-      "created_at": "2025-08-26T11:16:53.068Z",
-      "updated_at": "2025-08-26T11:16:53.068Z"
+      "created_at": "2026-03-19T15:33:36.992Z",
+      "updated_at": "2026-03-19T15:33:36.993Z"
     }
   },
   {
     "model": "core.trainingprogram",
-    "pk": 24,
+    "pk": 33,
     "fields": {
       "title": "Итоги 2 недели",
       "title_ru": "Итоги 2 недели",
       "title_uk": null,
       "title_en": null,
       "title_ge": null,
-      "content": "<h3>1. Уверенно готовит все виды напитков.2.Знает информацию о какао, цикории и о тростниковом сахаре.3. Знает все о чае (буклеты Basilur, Comptoir), кофе и консультирует клиентов.4.Знакомтво с брендами кофейного оборудования: какие представлены, особенности и специализация каждого (без истории)5. Самостоятельная уборка рабочей зоны.</h3>",
-      "content_ru": "<h3>1. Уверенно готовит все виды напитков.2.Знает информацию о какао, цикории и о тростниковом сахаре.3. Знает все о чае (буклеты Basilur, Comptoir), кофе и консультирует клиентов.4.Знакомтво с брендами кофейного оборудования: какие представлены, особенности и специализация каждого (без истории)5. Самостоятельная уборка рабочей зоны.</h3>",
+      "content": "<p>Уверенно готовит все виды напитков. Знает информацию о какао, цикории и о тростниковом сахаре. Знает все о чае (буклеты Basilur, Comptoir), кофе и консультирует клиентов. Знакомтво с брендами кофейного оборудования: какие представлены, особенности и специализация каждого (без истории) Самостоятельная уборка рабочей зоны.</p>",
+      "content_ru": "<p>Уверенно готовит все виды напитков. Знает информацию о какао, цикории и о тростниковом сахаре. Знает все о чае (буклеты Basilur, Comptoir), кофе и консультирует клиентов. Знакомтво с брендами кофейного оборудования: какие представлены, особенности и специализация каждого (без истории) Самостоятельная уборка рабочей зоны.</p>",
       "content_uk": null,
       "content_en": null,
       "content_ge": null,
@@ -890,21 +890,21 @@
       "period_number": 2,
       "order": 2,
       "is_active": true,
-      "created_at": "2025-08-26T11:16:53.063Z",
-      "updated_at": "2025-08-26T11:16:53.063Z"
+      "created_at": "2026-03-19T15:33:37.011Z",
+      "updated_at": "2026-03-19T15:33:37.011Z"
     }
   },
   {
     "model": "core.trainingprogram",
-    "pk": 26,
+    "pk": 34,
     "fields": {
       "title": "Итоги 3 недели",
       "title_ru": "Итоги 3 недели",
       "title_uk": null,
       "title_en": null,
       "title_ge": null,
-      "content": "<h3>1.Особое внимание уделяем практике приготовления напитков и консультаций клиентов.2. Знание маркировки, классификации и дефекты зеленого кофе.3. Изучение состава кофейных букетов и моносортов по буклету Blaser.4. Международные кофейные организации.ПРАКТИКА!!!</h3>",
-      "content_ru": "<h3>1.Особое внимание уделяем практике приготовления напитков и консультаций клиентов.2. Знание маркировки, классификации и дефекты зеленого кофе.3. Изучение состава кофейных букетов и моносортов по буклету Blaser.4. Международные кофейные организации.ПРАКТИКА!!!</h3>",
+      "content": "<p>Особое внимание уделяем практике приготовления напитков и консультаций клиентов. Знание маркировки, классификации и дефекты зеленого кофе. Изучение состава кофейных букетов и моносортов по буклету Blaser. Международные кофейные организации.ПРАКТИКА!!!</p>",
+      "content_ru": "<p>Особое внимание уделяем практике приготовления напитков и консультаций клиентов. Знание маркировки, классификации и дефекты зеленого кофе. Изучение состава кофейных букетов и моносортов по буклету Blaser. Международные кофейные организации.ПРАКТИКА!!!</p>",
       "content_uk": null,
       "content_en": null,
       "content_ge": null,
@@ -912,16 +912,16 @@
       "period_number": 3,
       "order": 3,
       "is_active": true,
-      "created_at": "2025-08-26T11:16:53.073Z",
-      "updated_at": "2025-08-26T11:16:53.073Z"
+      "created_at": "2026-03-19T15:33:37.027Z",
+      "updated_at": "2026-03-19T15:33:37.027Z"
     }
   },
   {
     "model": "core.jobinstruction",
-    "pk": 27,
+    "pk": 28,
     "fields": {
       "position": "barista",
-      "department": "general",
+      "department": "barista",
       "title": "Должностная Саломе (с поправками)",
       "title_ru": "Должностная Саломе (с поправками)",
       "title_uk": null,
@@ -932,18 +932,18 @@
       "content_uk": null,
       "content_en": null,
       "content_ge": null,
-      "order": 1,
+      "order": 0,
       "is_active": true,
-      "created_at": "2025-08-26T11:17:05.912Z",
-      "updated_at": "2025-08-26T11:17:05.912Z"
+      "created_at": "2026-03-19T15:33:37.067Z",
+      "updated_at": "2026-03-19T15:33:37.067Z"
     }
   },
   {
     "model": "core.jobinstruction",
-    "pk": 19,
+    "pk": 29,
     "fields": {
-      "position": "employee",
-      "department": "general",
+      "position": "barista",
+      "department": "barista",
       "title": "Должностная инструкция БАТУМИ",
       "title_ru": "Должностная инструкция БАТУМИ",
       "title_uk": null,
@@ -954,18 +954,18 @@
       "content_uk": null,
       "content_en": null,
       "content_ge": null,
-      "order": 1,
+      "order": 0,
       "is_active": true,
-      "created_at": "2025-08-26T11:17:05.867Z",
-      "updated_at": "2025-08-26T11:17:05.867Z"
+      "created_at": "2026-03-19T15:33:37.086Z",
+      "updated_at": "2026-03-19T15:33:37.086Z"
     }
   },
   {
     "model": "core.jobinstruction",
-    "pk": 20,
+    "pk": 30,
     "fields": {
       "position": "manager",
-      "department": "office",
+      "department": "management",
       "title": "Должностная инструкция Менеджер консультант (Грузия)",
       "title_ru": "Должностная инструкция Менеджер консультант (Грузия)",
       "title_uk": null,
@@ -976,18 +976,18 @@
       "content_uk": null,
       "content_en": null,
       "content_ge": null,
-      "order": 1,
+      "order": 0,
       "is_active": true,
-      "created_at": "2025-08-26T11:17:05.875Z",
-      "updated_at": "2025-08-26T11:17:05.875Z"
+      "created_at": "2026-03-19T15:33:37.122Z",
+      "updated_at": "2026-03-19T15:33:37.122Z"
     }
   },
   {
     "model": "core.jobinstruction",
-    "pk": 25,
+    "pk": 31,
     "fields": {
       "position": "manager",
-      "department": "office",
+      "department": "management",
       "title": "Должностная инструкция офис менеджер (Грузия)",
       "title_ru": "Должностная инструкция офис менеджер (Грузия)",
       "title_uk": null,
@@ -998,18 +998,18 @@
       "content_uk": null,
       "content_en": null,
       "content_ge": null,
-      "order": 1,
+      "order": 0,
       "is_active": true,
-      "created_at": "2025-08-26T11:17:05.902Z",
-      "updated_at": "2025-08-26T11:17:05.902Z"
+      "created_at": "2026-03-19T15:33:37.154Z",
+      "updated_at": "2026-03-19T15:33:37.154Z"
     }
   },
   {
     "model": "core.jobinstruction",
-    "pk": 21,
+    "pk": 32,
     "fields": {
       "position": "manager",
-      "department": "retail",
+      "department": "management",
       "title": "Должностная инструкция менеджера HoReCa",
       "title_ru": "Должностная инструкция менеджера HoReCa",
       "title_uk": null,
@@ -1020,18 +1020,18 @@
       "content_uk": null,
       "content_en": null,
       "content_ge": null,
-      "order": 1,
+      "order": 0,
       "is_active": true,
-      "created_at": "2025-08-26T11:17:05.881Z",
-      "updated_at": "2025-08-26T11:17:05.881Z"
+      "created_at": "2026-03-19T15:33:37.178Z",
+      "updated_at": "2026-03-19T15:33:37.178Z"
     }
   },
   {
     "model": "core.jobinstruction",
-    "pk": 22,
+    "pk": 33,
     "fields": {
       "position": "manager",
-      "department": "retail",
+      "department": "management",
       "title": "Должностная инструкция менеджера магазина",
       "title_ru": "Должностная инструкция менеджера магазина",
       "title_uk": null,
@@ -1042,18 +1042,18 @@
       "content_uk": null,
       "content_en": null,
       "content_ge": null,
-      "order": 1,
+      "order": 0,
       "is_active": true,
-      "created_at": "2025-08-26T11:17:05.887Z",
-      "updated_at": "2025-08-26T11:17:05.887Z"
+      "created_at": "2026-03-19T15:33:37.198Z",
+      "updated_at": "2026-03-19T15:33:37.198Z"
     }
   },
   {
     "model": "core.jobinstruction",
-    "pk": 23,
+    "pk": 34,
     "fields": {
       "position": "manager",
-      "department": "retail",
+      "department": "management",
       "title": "Должностная инструкция менеджера онлайн",
       "title_ru": "Должностная инструкция менеджера онлайн",
       "title_uk": null,
@@ -1064,18 +1064,18 @@
       "content_uk": null,
       "content_en": null,
       "content_ge": null,
-      "order": 1,
+      "order": 0,
       "is_active": true,
-      "created_at": "2025-08-26T11:17:05.893Z",
-      "updated_at": "2025-08-26T11:17:05.893Z"
+      "created_at": "2026-03-19T15:33:37.218Z",
+      "updated_at": "2026-03-19T15:33:37.218Z"
     }
   },
   {
     "model": "core.jobinstruction",
-    "pk": 26,
+    "pk": 35,
     "fields": {
       "position": "manager",
-      "department": "retail",
+      "department": "management",
       "title": "Должностная инструкция старшего менеджера магазина",
       "title_ru": "Должностная инструкция старшего менеджера магазина",
       "title_uk": null,
@@ -1086,18 +1086,18 @@
       "content_uk": null,
       "content_en": null,
       "content_ge": null,
-      "order": 1,
+      "order": 0,
       "is_active": true,
-      "created_at": "2025-08-26T11:17:05.907Z",
-      "updated_at": "2025-08-26T11:17:05.907Z"
+      "created_at": "2026-03-19T15:33:37.240Z",
+      "updated_at": "2026-03-19T15:33:37.240Z"
     }
   },
   {
     "model": "core.jobinstruction",
-    "pk": 24,
+    "pk": 36,
     "fields": {
       "position": "manager",
-      "department": "service",
+      "department": "management",
       "title": "Должностная инструкция менеджера сервисного центра",
       "title_ru": "Должностная инструкция менеджера сервисного центра",
       "title_uk": null,
@@ -1108,39 +1108,17 @@
       "content_uk": null,
       "content_en": null,
       "content_ge": null,
-      "order": 1,
+      "order": 0,
       "is_active": true,
-      "created_at": "2025-08-26T11:17:05.898Z",
-      "updated_at": "2025-08-26T11:17:05.898Z"
+      "created_at": "2026-03-19T15:33:37.309Z",
+      "updated_at": "2026-03-19T15:33:37.309Z"
     }
   },
   {
     "model": "core.coffeeinfo",
-    "pk": 15,
+    "pk": 17,
     "fields": {
-      "category": "brewing",
-      "title": "Экстракция кофе",
-      "title_ru": "Экстракция кофе",
-      "title_uk": null,
-      "title_en": null,
-      "title_ge": null,
-      "content": "<p>- процесс прохождения горячей воды под давлением через предварительно молотый кофе в результате которого вкусо – ароматические свойства кофе растворяются в воде.Приготовление эспрессо: Перед приготовлением каждой новой порции эспрессо группу нужно промывать в течение 2−3 секунд, а если группа не использовалась более 3 минут, то в течение 15−20 секунд. Пролив воды для варки кофе необходимо включать сразу же, как только холдер с кофейной таблеткой установлен в группу, − в противном случае кофе моментально начнет пригорать. Нужно использовать только подогретые чашки. В идеале экстракция занимает 25± 3 секунды. Во время пролива обращайте внимание на показания датчика давления − при исправной работе кофемашины стрелка всегда указывает на 9 атмосфер. Струйка кофе, вытекающая из носика холдера, должна быть красивой, ровной, маслянистой и непрерывающейся, она должна иметь золотисто-шоколадный оттенок. На фотографии посередине показана струйка, характерная для эспрессо при правильном помоле. Если струйка широкая, водянистая и белесая, как на фотографии слева, значит, помол оказался слишком грубым. Также это может означать слабую темперовку или использование недостаточного количества молотого кофе (или и то, и другое одновременно). Тонкая и прерывающаяся темная струйка кофе свидетельствует о слишком мелком помоле, слишком сильной прессовке или об использовании большого количества кофе. Такая струйка изображена на фотографии справа. Порция готового напитка составляет 35 мл. Если стандартная чашка эспрессо наполнилась за 10−15 секунд, помол необходимо слегка уменьшить, а если за 30 и более секунд − то увеличить. Для приготовления кофе «американо» нужно долить в чашку с эспрессо 50−170 мл горячей воды. Категорически не рекомендуется увеличивать время экстракции кофе, чтобы не ухудшать качество напитка горькими веществами.Эспрессо и ристретто считаются самыми полезными кофейными напитками. В этом наглядно можно убедиться с помощью графика экстракции. Т.к время приготовления ристретто и эспрессо не превышает 25 секунд, то в данных напитках содержится минимальное количество хлорогеновой кислоты и максимально выделены авкусо-ароматические свойства того сорта, на основе которого производится приготовление.Активное выделение кофеина происходит в промежутке от 0 до 15-20 секунд. После 25 секунды экстракции активно выделяется горечь и заметно ухудшается вкус кофе.</p>",
-      "content_ru": "<p>- процесс прохождения горячей воды под давлением через предварительно молотый кофе в результате которого вкусо – ароматические свойства кофе растворяются в воде.Приготовление эспрессо: Перед приготовлением каждой новой порции эспрессо группу нужно промывать в течение 2−3 секунд, а если группа не использовалась более 3 минут, то в течение 15−20 секунд. Пролив воды для варки кофе необходимо включать сразу же, как только холдер с кофейной таблеткой установлен в группу, − в противном случае кофе моментально начнет пригорать. Нужно использовать только подогретые чашки. В идеале экстракция занимает 25± 3 секунды. Во время пролива обращайте внимание на показания датчика давления − при исправной работе кофемашины стрелка всегда указывает на 9 атмосфер. Струйка кофе, вытекающая из носика холдера, должна быть красивой, ровной, маслянистой и непрерывающейся, она должна иметь золотисто-шоколадный оттенок. На фотографии посередине показана струйка, характерная для эспрессо при правильном помоле. Если струйка широкая, водянистая и белесая, как на фотографии слева, значит, помол оказался слишком грубым. Также это может означать слабую темперовку или использование недостаточного количества молотого кофе (или и то, и другое одновременно). Тонкая и прерывающаяся темная струйка кофе свидетельствует о слишком мелком помоле, слишком сильной прессовке или об использовании большого количества кофе. Такая струйка изображена на фотографии справа. Порция готового напитка составляет 35 мл. Если стандартная чашка эспрессо наполнилась за 10−15 секунд, помол необходимо слегка уменьшить, а если за 30 и более секунд − то увеличить. Для приготовления кофе «американо» нужно долить в чашку с эспрессо 50−170 мл горячей воды. Категорически не рекомендуется увеличивать время экстракции кофе, чтобы не ухудшать качество напитка горькими веществами.Эспрессо и ристретто считаются самыми полезными кофейными напитками. В этом наглядно можно убедиться с помощью графика экстракции. Т.к время приготовления ристретто и эспрессо не превышает 25 секунд, то в данных напитках содержится минимальное количество хлорогеновой кислоты и максимально выделены авкусо-ароматические свойства того сорта, на основе которого производится приготовление.Активное выделение кофеина происходит в промежутке от 0 до 15-20 секунд. После 25 секунды экстракции активно выделяется горечь и заметно ухудшается вкус кофе.</p>",
-      "content_uk": null,
-      "content_en": null,
-      "content_ge": null,
-      "image": "",
-      "order": 1,
-      "is_active": true,
-      "created_at": "2025-08-26T11:17:13.232Z",
-      "updated_at": "2025-08-26T11:17:13.232Z"
-    }
-  },
-  {
-    "model": "core.coffeeinfo",
-    "pk": 11,
-    "fields": {
-      "category": "general",
+      "category": "beans",
       "title": "Кофе без кофеина",
       "title_ru": "Кофе без кофеина",
       "title_uk": null,
@@ -1152,17 +1130,17 @@
       "content_en": null,
       "content_ge": null,
       "image": "",
-      "order": 1,
+      "order": 0,
       "is_active": true,
-      "created_at": "2025-08-26T11:17:13.210Z",
-      "updated_at": "2025-08-26T11:17:13.210Z"
+      "created_at": "2026-03-19T15:33:37.351Z",
+      "updated_at": "2026-03-19T15:33:37.351Z"
     }
   },
   {
     "model": "core.coffeeinfo",
-    "pk": 13,
+    "pk": 18,
     "fields": {
-      "category": "general",
+      "category": "beans",
       "title": "Правила занесения чашек кофе в шоп селер для сотрудников компании Dim Kava",
       "title_ru": "Правила занесения чашек кофе в шоп селер для сотрудников компании Dim Kava",
       "title_uk": null,
@@ -1174,17 +1152,17 @@
       "content_en": null,
       "content_ge": null,
       "image": "",
-      "order": 1,
+      "order": 0,
       "is_active": true,
-      "created_at": "2025-08-26T11:17:13.223Z",
-      "updated_at": "2025-08-26T11:17:13.223Z"
+      "created_at": "2026-03-19T15:33:37.370Z",
+      "updated_at": "2026-03-19T15:33:37.371Z"
     }
   },
   {
     "model": "core.coffeeinfo",
-    "pk": 14,
+    "pk": 19,
     "fields": {
-      "category": "general",
+      "category": "beans",
       "title": "Стандарты поведения сотрудников в Дом Кофе",
       "title_ru": "Стандарты поведения сотрудников в Дом Кофе",
       "title_uk": null,
@@ -1196,15 +1174,37 @@
       "content_en": null,
       "content_ge": null,
       "image": "",
-      "order": 1,
+      "order": 0,
       "is_active": true,
-      "created_at": "2025-08-26T11:17:13.228Z",
-      "updated_at": "2025-08-26T11:17:13.228Z"
+      "created_at": "2026-03-19T15:33:37.390Z",
+      "updated_at": "2026-03-19T15:33:37.390Z"
     }
   },
   {
     "model": "core.coffeeinfo",
-    "pk": 12,
+    "pk": 16,
+    "fields": {
+      "category": "brewing",
+      "title": "Экстракция кофе",
+      "title_ru": "Экстракция кофе",
+      "title_uk": null,
+      "title_en": null,
+      "title_ge": null,
+      "content": "<p>• процесс прохождения горячей воды под давлением через предварительно молотый кофе в результате которого вкусо – ароматические свойства кофе растворяются в воде.Приготовление эспрессо: Перед приготовлением каждой новой порции эспрессо группу нужно промывать в течение 2−3 секунд, а если группа не использовалась более 3 минут, то в течение 15−20 секунд. Пролив воды для варки кофе необходимо включать сразу же, как только холдер с кофейной таблеткой установлен в группу, − в противном случае кофе моментально начнет пригорать. Нужно использовать только подогретые чашки. В идеале экстракция занимает 25± 3 секунды. Во время пролива обращайте внимание на показания датчика давления − при исправной работе кофемашины стрелка всегда указывает на 9 атмосфер. Струйка кофе, вытекающая из носика холдера, должна быть красивой, ровной, маслянистой и непрерывающейся, она должна иметь золотисто-шоколадный оттенок. На фотографии посередине показана струйка, характерная для эспрессо при правильном помоле. Если струйка широкая, водянистая и белесая, как на фотографии слева, значит, помол оказался слишком грубым. Также это может означать слабую темперовку или использование недостаточного количества молотого кофе (или и то, и другое одновременно). Тонкая и прерывающаяся темная струйка кофе свидетельствует о слишком мелком помоле, слишком сильной прессовке или об использовании большого количества кофе. Такая струйка изображена на фотографии справа. Порция готового напитка составляет 35 мл. Если стандартная чашка эспрессо наполнилась за 10−15 секунд, помол необходимо слегка уменьшить, а если за 30 и более секунд − то увеличить. Для приготовления кофе «американо» нужно долить в чашку с эспрессо 50−170 мл горячей воды. Категорически не рекомендуется увеличивать время экстракции кофе, чтобы не ухудшать качество напитка горькими веществами.Эспрессо и ристретто считаются самыми полезными кофейными напитками. В этом наглядно можно убедиться с помощью графика экстракции. Т.к время приготовления ристретто и эспрессо не превышает 25 секунд, то в данных напитках содержится минимальное количество хлорогеновой кислоты и максимально выделены авкусо-ароматические свойства того сорта, на основе которого производится приготовление.Активное выделение кофеина происходит в промежутке от 0 до 15-20 секунд. После 25 секунды экстракции активно выделяется горечь и заметно ухудшается вкус кофе.</p>",
+      "content_ru": "<p>• процесс прохождения горячей воды под давлением через предварительно молотый кофе в результате которого вкусо – ароматические свойства кофе растворяются в воде.Приготовление эспрессо: Перед приготовлением каждой новой порции эспрессо группу нужно промывать в течение 2−3 секунд, а если группа не использовалась более 3 минут, то в течение 15−20 секунд. Пролив воды для варки кофе необходимо включать сразу же, как только холдер с кофейной таблеткой установлен в группу, − в противном случае кофе моментально начнет пригорать. Нужно использовать только подогретые чашки. В идеале экстракция занимает 25± 3 секунды. Во время пролива обращайте внимание на показания датчика давления − при исправной работе кофемашины стрелка всегда указывает на 9 атмосфер. Струйка кофе, вытекающая из носика холдера, должна быть красивой, ровной, маслянистой и непрерывающейся, она должна иметь золотисто-шоколадный оттенок. На фотографии посередине показана струйка, характерная для эспрессо при правильном помоле. Если струйка широкая, водянистая и белесая, как на фотографии слева, значит, помол оказался слишком грубым. Также это может означать слабую темперовку или использование недостаточного количества молотого кофе (или и то, и другое одновременно). Тонкая и прерывающаяся темная струйка кофе свидетельствует о слишком мелком помоле, слишком сильной прессовке или об использовании большого количества кофе. Такая струйка изображена на фотографии справа. Порция готового напитка составляет 35 мл. Если стандартная чашка эспрессо наполнилась за 10−15 секунд, помол необходимо слегка уменьшить, а если за 30 и более секунд − то увеличить. Для приготовления кофе «американо» нужно долить в чашку с эспрессо 50−170 мл горячей воды. Категорически не рекомендуется увеличивать время экстракции кофе, чтобы не ухудшать качество напитка горькими веществами.Эспрессо и ристретто считаются самыми полезными кофейными напитками. В этом наглядно можно убедиться с помощью графика экстракции. Т.к время приготовления ристретто и эспрессо не превышает 25 секунд, то в данных напитках содержится минимальное количество хлорогеновой кислоты и максимально выделены авкусо-ароматические свойства того сорта, на основе которого производится приготовление.Активное выделение кофеина происходит в промежутке от 0 до 15-20 секунд. После 25 секунды экстракции активно выделяется горечь и заметно ухудшается вкус кофе.</p>",
+      "content_uk": null,
+      "content_en": null,
+      "content_ge": null,
+      "image": "",
+      "order": 0,
+      "is_active": true,
+      "created_at": "2026-03-19T15:33:37.333Z",
+      "updated_at": "2026-03-19T15:33:37.333Z"
+    }
+  },
+  {
+    "model": "core.coffeeinfo",
+    "pk": 20,
     "fields": {
       "category": "varieties",
       "title": "Маркировка кофе",
@@ -1218,10 +1218,10 @@
       "content_en": null,
       "content_ge": null,
       "image": "",
-      "order": 1,
+      "order": 0,
       "is_active": true,
-      "created_at": "2025-08-26T11:17:13.216Z",
-      "updated_at": "2025-08-26T11:17:13.216Z"
+      "created_at": "2026-03-19T15:33:37.410Z",
+      "updated_at": "2026-03-19T15:33:37.411Z"
     }
   }
 ]
