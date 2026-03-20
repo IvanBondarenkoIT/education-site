@@ -86,6 +86,8 @@ MIDDLEWARE = [
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
+    # До CsrfViewMiddleware: при ADMIN_DEMO_BYPASS_CSRF=1 снимает CSRF только с POST /admin/login/
+    'education_site.middleware.AdminDemoBypassCsrfMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
