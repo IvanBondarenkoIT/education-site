@@ -29,14 +29,39 @@ DEBUG = os.environ.get('DEBUG', 'True') == 'True'
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', '0.0.0.0', '.railway.app']
 
-# CSRF — для форм на Railway (логин в админку, переключение языка и т.д.)
+# За прокси Railway без этого request.is_secure() = False — ломаются CSRF, secure cookies, редиректы
+if (
+    os.environ.get('RAILWAY_ENVIRONMENT')
+    or os.environ.get('RAILWAY')
+    or os.environ.get('RAILWAY_PUBLIC_DOMAIN')
+):
+    SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
+# CSRF — логин в /admin/, POST-формы
+# Django сопоставляет *.railway.app с хостами *.up.railway.app (суффикс .railway.app)
 CSRF_TRUSTED_ORIGINS = [
-    'https://*.up.railway.app',  # все поддомены Railway
+    'https://*.railway.app',
+    'https://*.up.railway.app',
     'https://education-site-production.up.railway.app',
 ]
+
+def _normalize_csrf_origin(domain_or_url: str) -> str:
+    d = domain_or_url.strip()
+    if not d:
+        return ''
+    if d.startswith('http://') or d.startswith('https://'):
+        return d.rstrip('/')
+    return f'https://{d}'.rstrip('/')
+
 if domain := os.environ.get('RAILWAY_PUBLIC_DOMAIN'):
-    origin = f'https://{domain}' if not domain.startswith('http') else domain
-    if origin not in CSRF_TRUSTED_ORIGINS:
+    origin = _normalize_csrf_origin(domain)
+    if origin and origin not in CSRF_TRUSTED_ORIGINS:
+        CSRF_TRUSTED_ORIGINS.append(origin)
+
+# Доп. origins из Railway: DJANGO_CSRF_TRUSTED_ORIGINS="https://a.com,https://b.com"
+for part in os.environ.get('DJANGO_CSRF_TRUSTED_ORIGINS', '').split(','):
+    origin = _normalize_csrf_origin(part)
+    if origin and origin not in CSRF_TRUSTED_ORIGINS:
         CSRF_TRUSTED_ORIGINS.append(origin)
 
 
